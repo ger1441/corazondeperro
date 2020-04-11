@@ -10,16 +10,20 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-<body>
+<body class="{{ $bodyClass }}">
     <!-- Header -->
     <header id="header">
         <div class="inner">
-            <a href="index.html" class="logo">Theory</a>
-            <nav id="nav">
+            {{--<a href="index.html" class="logo">Theory</a>--}}
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Logo">
+            </a>
+            <nav id="nav" class="{{ $navClass }}">
                 <a href="index.html">Home</a>
-                <a href="generic.html">Generic</a>
-                <a href="elements.html">Elements</a>
+                <a href="generic.html">Adopta</a>
+                <a href="elements.html">Apóyanos</a>
             </nav>
             <a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
         </div>

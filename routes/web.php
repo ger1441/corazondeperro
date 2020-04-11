@@ -14,5 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('index');
+    return view('index',['bodyClass'=>'','navClass'=>'navFirst']);
+});
+
+Route::get('/test',function() {
+    return view('test',['bodyClass'=>'subpage','navClass'=>'']);
 });

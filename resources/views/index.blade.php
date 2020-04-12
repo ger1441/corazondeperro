@@ -68,7 +68,7 @@
                     <img src="images/oportunidades.png" alt="Oportunidades" />
                 </div>
                 <header>
-                    <h3>Brindamos segundas oportunidades</h3>
+                    <h3>Creemos en las segundas oportunidades</h3>
                 </header>
                 <p>Si bien hemos tratado de apoyar a cualquier animalito que lo necesite, nos hemos enfocado en algunos peluditos que necesitan atención especial o algún tratamiento para seguir adelante.</p>
                 <footer>
@@ -122,4 +122,6 @@
 
 @endsection
 
-
+@push('scripts')
+    <script src="assets/js/index.js"></script>
+@endpush

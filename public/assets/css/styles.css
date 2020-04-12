@@ -1,6 +1,49 @@
+/* General */
+body p
+{
+    font-size: 16px !important;
+}
+body h2
+{
+    font-weight: 600;
+}
+
 /* For principal header */
+.sectionBanner
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sectionBanner p
+{
+    border: 1px solid white;
+    padding: 8px;
+    font-weight: 900;
+}
+
 .navFirst a
 {
     font-weight: bold !important;
     margin-top: 12px;
+    font-size: 1em !important;
 }
+
+/* For principal body */
+.sectionPrincipal
+{
+    padding-top: 3em !important;
+    padding-bottom: 1em !important;
+}
+
+.font-weight-bold
+{
+    font-weight: bold !important;
+}
+
+.justifyContent
+{
+    text-align: justify;
+}
+

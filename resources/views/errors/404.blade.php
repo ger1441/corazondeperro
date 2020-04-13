@@ -1,6 +1,6 @@
-@extends('layoutPage',['bodyClass'=>'subpage','navClass'=>''])
+@extends('layouts.page',['bodyClass'=>'subpage','navClass'=>''])
 @push('styles')
-    <link rel="stylesheet" href="assets/css/errors.css">
+    <link rel="stylesheet" href="/assets/css/errors.css">
 @endpush
 @section('content')
         <div class="flex-center position-ref full-height">

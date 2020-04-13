@@ -1,4 +1,4 @@
-@extends('layoutPage')
+@extends('layouts.page')
 
 @section('content')
 <!-- Banner -->

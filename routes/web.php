@@ -25,6 +25,12 @@ Route::get('/apoyanos',function(){
     return view('apoyanos',['bodyClass'=>'subpage','navClass'=>'']);
 });
 
+/* Administrador */
+Auth::routes();
+Route::get('/admin','AdminController@home')->name('home');
+
 Route::get('/test',function() {
     return view('test',['bodyClass'=>'subpage','navClass'=>'']);
 });
+
+

@@ -9,7 +9,7 @@
 
 <!-- ¿Qué somos? -->
 <section class="wrapper sectionPrincipal">
-    <div class="inner">
+    <div class="inner justifyContent">
         <h2>¿Qué somos?</h2>
         <p><strong>Se habla mucho de sueños, para nosotros es la realidad, la prueba viviente de la evolución de la gratitud.<br>
                 Para algunos el único hogar conocido, para otros una oportunidad a un nuevo hogar... con historias felices y muchas otras demasiado tristes.</strong></p>
@@ -25,7 +25,7 @@
     <div class="inner justifyContent">
         <h2>Nuestra Historia</h2>
         <p><span class="image left"><img src="images/rufita.png" alt="Rufita" /></span><h4><strong>Todo comenzó con Rufita.</strong></h4>
-        <strong>Hace algunos años, en 2008, rescaté a una perrita que se encontraba en posesión de unos vecinos, los cuáles desgraciadamente se drogaban.  Me partió el corazón ver que no tenía como atajarse del sol o la lluvia. Insistí e insistí, hasta que un día me dijeron <i>“Ten, llévatela”</i><br> Era pastor inglés.</></p>
+        <strong>Hace algunos años, en 2008, rescaté a una perrita que se encontraba en posesión de unos vecinos, los cuáles desgraciadamente se drogaban.  Me partió el corazón ver que no tenía como atajarse del sol o la lluvia. Insistí e insistí, hasta que un día me dijeron <i>“Ten, llévatela”</i><br> Era pastor inglés.</strong></p>
         <p><strong>Un día, mi hermano y ella salieron a caminar juntos. Para mala fortuna de ambos, una persona en estado de ebriedad los atropelló y desgraciadamente Rufa resultó herida de gravedad.</strong></p>
 
         <p><strong>
@@ -51,7 +51,7 @@
             <p><strong>No todo estará perdido mientras haya personas con corazón de perro.</strong></p>
         </header>
         <div class="flex flex-2">
-            <article>
+            <article class="justifyContent">
                 <div class="image fit">
                     <img src="images/familia.png" alt="Familia" />
                 </div>
@@ -60,10 +60,10 @@
                 </header>
                 <p>En esta labor he encontrado más que un objetivo o un sueño, un motivo para seguir adelante. Una realidad por la cuál vale la pena luchar y sin duda tratar de cambiar.</p>
                 <footer>
-                    <a href="#" class="button special fit icon fa-camera">Galeria</a>
+                    <a href="#" class="openModal button special fit icon fa-camera" data-modal="Familia">Galeria</a>
                 </footer>
             </article>
-            <article>
+            <article class="justifyContent">
                 <div class="image fit">
                     <img src="images/oportunidades.png" alt="Oportunidades" />
                 </div>
@@ -72,12 +72,65 @@
                 </header>
                 <p>Si bien hemos tratado de apoyar a cualquier animalito que lo necesite, nos hemos enfocado en algunos peluditos que necesitan atención especial o algún tratamiento para seguir adelante.</p>
                 <footer>
-                    <a href="#" class="button special fit icon fa-camera">Galeria</a>
+                    <a href="#" class="openModal button special fit icon fa-camera" data-modal="Oportunidades">Galeria</a>
                 </footer>
             </article>
         </div>
     </div>
 </section>
+
+<!-- Modal Familia -->
+<div id="modalFamilia" class="modal">
+    <div class="flexModal" id="flexFamilia" data-modal="Familia">
+        <div class="contenido-modal">
+            <div class="modal-header flex">
+                <h2>Somos una familia <span class="spanClose closeFamilia" data-modal="Familia">&times;</span></h2>
+                <p>Actualmente somos más de 70 integrantes en ésta gran familia, agradeceríamos mucho tu <a href="/apoyo">apoyo</a></p>
+            </div>
+            <div class="modal-body">
+                <span class="image fit" id="imagePFamilia" data-image="images/familia.png"><img src="images/familia.png" alt="" /></span>
+                <div class="box alt">
+                    <div class="row 50% uniform">
+                        <div class="4u"><span class="image fit imageFit" data-target="imagePFamilia" data-image="images/familia/01.png"><img src="images/familia/01.png" alt="" /></span></div>
+                        <div class="4u"><span class="image fit imageFit" data-target="imagePFamilia" data-image="images/familia/02.png"><img src="images/familia/02.png" alt="" /></span></div>
+                        <div class="4u$"><span class="image fit imageFit" data-target="imagePFamilia" data-image="images/familia/03.png"><img src="images/familia/03.png" alt="" /></span></div>
+                        {{--<!-- Break -->
+                        <div class="4u"><span class="image fit"><img src="images/familia/01.png" alt="" /></span></div>
+                        <div class="4u"><span class="image fit"><img src="images/familia/02.png" alt="" /></span></div>
+                        <div class="4u$"><span class="image fit"><img src="images/familia/03.png" alt="" /></span></div>--}}
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <button class="buton special closeFamilia" data-modal="Familia">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal Oportunidades -->
+<div id="modalOportunidades" class="modal">
+    <div class="flexModal" id="flexOportunidades" data-modal="Oportunidades">
+        <div class="contenido-modal">
+            <div class="modal-header flex">
+                <h2>Tratamos de brindar una segunda oportunidad <span class="spanClose closeFamilia" data-modal="Oportunidades">&times;</span></h2>
+                <p>Hemos cobijado a peluditos con alguna discapacidad, agradeceríamos mucho tu <a href="/apoyo">apoyo</a></p>
+            </div>
+            <div class="modal-body">
+                <span class="image fit" id="imagePOportunidades" data-image="images/oportunidades.png"><img src="images/oportunidades.png" alt="" /></span>
+                <div class="box alt">
+                    <div class="row 50% uniform">
+                        <div class="4u"><span class="image fit imageFit" data-target="imagePOportunidades" data-image="images/oportunidades/01.png"><img src="images/oportunidades/01.png" alt="" /></span></div>
+                        <div class="4u"><span class="image fit imageFit" data-target="imagePOportunidades" data-image="images/oportunidades/02.png"><img src="images/oportunidades/02.png" alt="" /></span></div>
+                        <div class="4u$"><span class="image fit imageFit" data-target="imagePOportunidades" data-image="images/oportunidades/03.png"><img src="images/oportunidades/03.png" alt="" /></span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <button class="buton special closeFamilia" data-modal="Oportunidades">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- Agradecimientos -->
 <section id="two" class="wrapper style1 special">

@@ -15,20 +15,20 @@
             <div class="justifyContent">
                 <h2>Otras maneras de apoyar</h2>
                 <p><strong>Si bien NO dependemos al 100% de donaciones, sin duda tu ayuda es muy importante para nosotros.<br>
-                Hay temporadas en las que el trabajo escasea y dificilmente la gente nos puede apoyar, sin embargo agradecemos cualquier esfuerzo, sea en efectivo o en especie, siempre será bien recibido.<br>
+                Hay temporadas en las que el trabajo escasea y dificilmente la gente nos puede apoyar solicitando servicios, sin embargo agradecemos cualquier esfuerzo para ayudarnos, sea en efectivo o en especie, siempre será bien recibido.<br>
                     ¡Gracias!</strong></p>
 
                 <form method="post" action="#">
                     <div class="row uniform">
                         <div class="6u 12u$(xsmall)">
-                            <input type="text" name="name" id="name" value="" placeholder="Name" />
+                            <input type="text" name="name" id="name" value="" placeholder="Nombre" />
                         </div>
                         <div class="6u$ 12u$(xsmall)">
                             <input type="email" name="email" id="email" value="" placeholder="Email" />
                         </div>
                         <!-- Break -->
                         <div class="12u$">
-                            <textarea name="message" id="message" placeholder="Enter your message" rows="6" style="resize: none;"></textarea>
+                            <textarea name="message" id="message" placeholder="Déjanos tu mensaje o comentario, gracias por apoyar!" rows="6" style="resize: none;"></textarea>
                         </div>
                         <!-- Break -->
                         <div class="12u$">

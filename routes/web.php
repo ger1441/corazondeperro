@@ -17,6 +17,14 @@ Route::get('/', function () {
     return view('index',['bodyClass'=>'','navClass'=>'navFirst']);
 });
 
+Route::get('/adopta', function(){
+    return view('adopta',['bodyClass'=>'subpage','navClass'=>'']);
+});
+
+Route::get('/apoyanos',function(){
+    return view('apoyanos',['bodyClass'=>'subpage','navClass'=>'']);
+});
+
 Route::get('/test',function() {
     return view('test',['bodyClass'=>'subpage','navClass'=>'']);
 });

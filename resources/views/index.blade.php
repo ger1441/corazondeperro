@@ -85,7 +85,7 @@
         <div class="contenido-modal">
             <div class="modal-header flex">
                 <h2>Somos una familia <span class="spanClose closeFamilia" data-modal="Familia">&times;</span></h2>
-                <p>Actualmente somos más de 70 integrantes en ésta gran familia, agradeceríamos mucho tu <a href="/apoyo">apoyo</a></p>
+                <p>Actualmente somos más de 70 integrantes en ésta gran familia, agradeceríamos mucho tu <a href="/apoyanos">apoyo</a></p>
             </div>
             <div class="modal-body">
                 <span class="image fit" id="imagePFamilia" data-image="images/familia.png"><img src="images/familia.png" alt="" /></span>
@@ -113,7 +113,7 @@
         <div class="contenido-modal">
             <div class="modal-header flex">
                 <h2>Tratamos de brindar una segunda oportunidad <span class="spanClose closeFamilia" data-modal="Oportunidades">&times;</span></h2>
-                <p>Hemos cobijado a peluditos con alguna discapacidad, agradeceríamos mucho tu <a href="/apoyo">apoyo</a></p>
+                <p>Hemos cobijado a peluditos con alguna discapacidad, agradeceríamos mucho tu <a href="/apoyanos">apoyo</a></p>
             </div>
             <div class="modal-body">
                 <span class="image fit" id="imagePOportunidades" data-image="images/oportunidades.png"><img src="images/oportunidades.png" alt="" /></span>

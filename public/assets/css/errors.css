@@ -1,0 +1,18 @@
+.full-height {
+    height: 75vh;
+}
+
+.flex-center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.position-ref {
+    position: relative;
+}
+
+.content {
+    text-align: center;
+    font-size: 40px;
+}

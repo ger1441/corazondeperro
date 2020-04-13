@@ -3,20 +3,26 @@
     <section id="one" class="wrapper">
         <div class="inner">
             <h2>¡Ayúdanos a Ayudar!</h2>
-            <div class="box justifyContent">
-                <p><strong>Actualmente logramos recaudar un poco de dinero mediante los trabajos de estética que realizamos.<br>
-                        De igual manera hacemos costura de suéteres para mascotas y ventas de garage con algunas cosas que amablemente la gente nos ha donado para poder juntar un poco más de recursos.</strong><br>
-                <p><strong>Solicitamos de tu apoyo, es vital para poder seguir con esta gran labor. <br>
-                   Si deseas algún corte para tu mascota o alguna prenda, con libertad nos puedes contactar y con mucho gusto te atenderemos!</strong></p>
-            </div>
-            <div>
-                <p class="image fit" style="text-align: center;"><img src="images/servicios.jpg" alt="Servicios"></p>
+            <div class="row">
+                <div class="6u 12u$(small)">
+                    <p><strong>Con mucho esfuerzo pero con gran voluntad, realizamos algunos trabajos para obtener recursos y ayudar a nuestros rescataditos.<br>
+                            Nos ponemos a tu disposición, nos puedes contactar y con gusto te atenderemos.</strong></p>
+                    <ul>
+                        <li><strong>Servicio de estética canina.</strong></li>
+                        <li><strong>Costura de prendas para mascotas.</strong></li>
+                        <li><strong>Ventas de garage con lo que amablemente nos puedan donar.</strong></li>
+                    </ul>
+                    <p><strong>De igual forma te pedimos nos ayudes a difundir con tus amigos, familiares, contactos nuestra página y nuestro <a href="https://www.facebook.com/calpulalpancorazondeperro/" target="_blank" class="linkWithoutDecoration">grupo en Facebook</a></strong></p>
+                </div>
+                <div class="6u 12u$(small)">
+                    <img src="images/servicios.jpg" alt="Servicios" class="image fit">
+                </div>
             </div>
             <div class="justifyContent">
                 <h2>Otras maneras de apoyar</h2>
-                <p><strong>Si bien NO dependemos al 100% de donaciones, sin duda tu ayuda es muy importante para nosotros.<br>
-                Hay temporadas en las que el trabajo escasea y dificilmente la gente nos puede apoyar solicitando servicios, sin embargo agradecemos cualquier esfuerzo para ayudarnos, sea en efectivo o en especie, siempre será bien recibido.<br>
-                    ¡Gracias!</strong></p>
+                <p><strong>Como podrás notar, hacemos un gran esfuerzo para poder ayudar a los animalitos que lo necesiten, pero sin duda alguna tu ayuda es muy importante para nosotros.<br>
+                Hay temporadas en las que el trabajo escasea y difícilmente la gente nos puede apoyar solicitando servicios, sin embargo cualquier esfuerzo por ayudarnos, sea en efectivo o en especie (alimento, material de curación, material de limpieza) sin importar la cantidad, siempre será bien recibida.<br>
+                    ¡Muchas Gracias!</strong></p>
 
                 <form method="post" action="#">
                     <div class="row uniform">

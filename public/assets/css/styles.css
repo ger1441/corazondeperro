@@ -107,6 +107,23 @@ body h2
         cursor: pointer;
     }
 
+/* Apoyanos */
+.imageBigCenter
+{
+    display: inline !important;
+    width: 60% !important;
+}
+.linkWithoutDecoration
+{
+    text-decoration: none;
+}
+
+
+
+/* ====== */
+/* Medias */
+/* ====== */
+
 @media screen and (max-width:900px){
     .modal-header h2{
         font-size: 1.1em;
@@ -120,6 +137,10 @@ body h2
     .textos{
         padding: 150px;
     }
+
+    .imageBigCenter{
+        width: 100% !important;
+    }
 }
 
 @media screen and (max-width:500px){
@@ -127,5 +148,7 @@ body h2
         padding:50px;
     }
 }
+
+
 
 

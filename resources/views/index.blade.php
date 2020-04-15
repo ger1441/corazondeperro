@@ -25,8 +25,8 @@
     <div class="inner justifyContent">
         <h2>Nuestra Historia</h2>
         <p><span class="image left"><img src="images/rufita.png" alt="Rufita" /></span><h4><strong>Todo comenzó con Rufita.</strong></h4>
-        <p><strong>Hace algunos años, en 2008, rescaté a una perrita que se encontraba en posesión de unos vecinos, los cuáles desgraciadamente se drogaban.  Me partió el corazón ver que no tenía como atajarse del sol o la lluvia. Insistí e insistí, hasta que un día me dijeron <i>“Ten, llévatela”</i><br> Era pastor inglés.</strong></p>
-        <p><strong>Un día, mi hermano y ella salieron a caminar juntos. Para mala fortuna de ambos, una persona en estado de ebriedad los atropelló y desgraciadamente Rufa resultó herida de gravedad.</strong></p>
+        <p><strong>Hace algunos años, en 2008, rescaté a una perrita que se encontraba en posesión de unos vecinos, los cuáles desafortunadamente se drogaban.  Me partió el corazón ver que no tenía como atajarse del sol o la lluvia. Insistí e insistí, hasta que un día me dijeron <i>“Ten, llévatela”</i><br> Era pastor inglés.</strong></p>
+        <p><strong>Un día mi hermano y ella salieron a caminar juntos, para mala fortuna de ambos, una persona en estado de ebriedad los atropelló y Rufa resultó herida de gravedad.</strong></p>
 
         <p><strong>
                 Cuándo estaba agonizando, le prometí que esto no quedaría así y que el culpable iba a pagar;<br>
@@ -39,7 +39,7 @@
         <p><strong>No solo hemos ayudado a perritos, también hemos ayudado a gatos, loros, caballos y uno que otro animalito de otra especie.<br>
                 Con lo que logró juntar de algunos trabajos de estética canina y con la ayuda de mi esposo e hijas hemos logrado salir adelante, al igual que con el apoyo de algunas personas que se acuerdan de nosotros y nuestros rescataditos.</strong></p>
 
-        <p><strong>Y aunque hay temporadas que no cuento con mucha ayuda, espero en Dios seguir con la fortaleza para continuar con ésta gran labor y seguir ayudando animalitos a tener una mejor vida... una vida digna &#128522;</strong></p>
+        <p><strong>Y aunque hay temporadas que no cuento con mucha ayuda, espero en Dios seguir con la fortaleza para continuar con ésta gran labor y seguir ayudando animalitos a tener una mejor vida, una vida digna &#128522;</strong></p>
     </div>
 </section>
 

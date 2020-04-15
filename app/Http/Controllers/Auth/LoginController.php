@@ -41,6 +41,13 @@ class LoginController extends Controller
         $this->middleware('guest')->except('logout');
     }
 
+    # Por defecto Laravel usa el campo 'email' para el Login
+    # En ésta función se declara el campo por el cual debe de ser autenticado
+    public function username()
+    {
+        return 'user';
+    }
+
     # Se sobrescribe el método para definir la ruta de redireccionamiento
     public function logout(Request $request)
     {

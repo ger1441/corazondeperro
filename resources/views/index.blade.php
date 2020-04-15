@@ -25,7 +25,7 @@
     <div class="inner justifyContent">
         <h2>Nuestra Historia</h2>
         <p><span class="image left"><img src="images/rufita.png" alt="Rufita" /></span><h4><strong>Todo comenzó con Rufita.</strong></h4>
-        <strong>Hace algunos años, en 2008, rescaté a una perrita que se encontraba en posesión de unos vecinos, los cuáles desgraciadamente se drogaban.  Me partió el corazón ver que no tenía como atajarse del sol o la lluvia. Insistí e insistí, hasta que un día me dijeron <i>“Ten, llévatela”</i><br> Era pastor inglés.</strong></p>
+        <p><strong>Hace algunos años, en 2008, rescaté a una perrita que se encontraba en posesión de unos vecinos, los cuáles desgraciadamente se drogaban.  Me partió el corazón ver que no tenía como atajarse del sol o la lluvia. Insistí e insistí, hasta que un día me dijeron <i>“Ten, llévatela”</i><br> Era pastor inglés.</strong></p>
         <p><strong>Un día, mi hermano y ella salieron a caminar juntos. Para mala fortuna de ambos, una persona en estado de ebriedad los atropelló y desgraciadamente Rufa resultó herida de gravedad.</strong></p>
 
         <p><strong>

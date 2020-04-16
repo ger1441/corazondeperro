@@ -28,6 +28,7 @@ Route::get('/apoyanos',function(){
 /* Administrador */
 Auth::routes();
 Route::get('/admin','AdminController@home')->name('home');
+Route::resource('/rescataditos','AnimalitosController');
 
 Route::get('/test',function() {
     return view('test',['bodyClass'=>'subpage','navClass'=>'']);

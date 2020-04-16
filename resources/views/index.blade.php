@@ -36,7 +36,7 @@
         <p><strong>De ésta forma nace la iniciativa de ayudar a peluditos que han sido agredidos, maltratados, violentados, atropellados… algunos discapacitados y otros enfermos.
                 Han sido años de lucha constante, pero siempre con la mentalidad y voluntad para apoyar a esos animalitos que han sufrido bastante.</strong></p>
 
-        <p><strong>No solo hemos ayudado a perritos, también hemos ayudado a gatos, loros, caballos y uno que otro animalito de otra especie.<br>
+        <p><span class="image right"><img src="images/logo_historia.png" alt="Logo" /></span><strong>No solo hemos ayudado a perritos, también hemos ayudado a gatos, loros, caballos y uno que otro animalito de otra especie.<br>
                 Con lo que logró juntar de algunos trabajos de estética canina y con la ayuda de mi esposo e hijas hemos logrado salir adelante, al igual que con el apoyo de algunas personas que se acuerdan de nosotros y nuestros rescataditos.</strong></p>
 
         <p><strong>Y aunque hay temporadas que no cuento con mucha ayuda, espero en Dios seguir con la fortaleza para continuar con ésta gran labor y seguir ayudando animalitos a tener una mejor vida, una vida digna &#128522;</strong></p>
@@ -44,7 +44,7 @@
 </section>
 
 <!-- Milagros -->
-<section id="three" class="wrapper special sectionPrincipal">
+<section id="three" class="wrapper special">
     <div class="inner">
         <header class="align-center">
             <h3>Los milagros existen... hay esperanza</h3>

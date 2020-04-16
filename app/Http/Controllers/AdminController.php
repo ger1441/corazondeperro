@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class AdminController extends Controller
 {
@@ -13,6 +14,6 @@ class AdminController extends Controller
 
     public function home()
     {
-        return view('admin.home');
+        return view('admin.home',["infoUser"=>Auth::user()]);
     }
 }

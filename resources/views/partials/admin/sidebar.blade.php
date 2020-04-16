@@ -1,5 +1,5 @@
 <!-- Main Sidebar Container -->
-<aside class="main-sidebar sidebar-dark-primary elevation-4">
+<aside class="main-sidebar sidebar-light-primary elevation-4">
     <!-- Brand Logo -->
     <a href="/admin" class="brand-link">
         <img src="/images/admin/logo_pequeño.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
@@ -12,10 +12,10 @@
         <!-- Sidebar user panel (optional) -->
         <div class="user-panel mt-3 pb-3 mb-3 d-flex">
             <div class="image">
-                <img src="https://ui-avatars.com/api/?name=German+Quintos&size=160" class="img-circle elevation-2" alt="User Image">
+                <img src="https://ui-avatars.com/api/?name={{$infoUser->name}}&size=160" class="img-circle elevation-2" alt="User Image">
             </div>
             <div class="info">
-                <a href="#" class="d-block">Germán Quintos</a>
+                <a href="#" class="d-block">{{$infoUser->name}}</a>
             </div>
         </div>
 

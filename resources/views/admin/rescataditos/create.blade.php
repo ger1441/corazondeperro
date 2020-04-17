@@ -1,4 +1,7 @@
 @extends('layouts.admin')
+@push('styles')
+    <link rel="stylesheet" href="/assets/admin/plugins/summernote.css">
+@endpush
 @section('content')
     <div class="col">
         <form action="/rescataditos" method="post">
@@ -58,9 +61,12 @@
                     <label class="form-check-label" for="chkHistoria">Agregar historia</label>
                 </div>
                 <div class="form-group col-12 history d-none">
+                    <div id="summernote"></div>
+                </div>
+                <!--<div class="form-group col-12 history d-none">
                     <label for="historia">Historia</label>
                     <textarea id="historia" rows="2" class="form-control" placeholder="Aquí puedes detallar la historia de este peludito" style="resize: none;"></textarea>
-                </div>
+                </div>-->
                 <div class="form-group col-md-4 history d-none">
                     <label for="fotos">Foto(s)</label>
                     <input type="file" name="fotos[]" id="fotos" class="form-control" accept="image/*" multiple>
@@ -76,9 +82,20 @@
     </div>
 @endsection
 @push('scripts')
+    <script src="/assets/admin/plugins/summernote.css"></script>
     <script>
         $(function(){
-            $("#historia").wysihtml5();
+            $("#summernote").summernote({
+                toolbar: [
+                    // [groupName, [list of button]]
+                    ['style', ['bold', 'italic', 'underline', 'clear']],
+                    ['font', ['strikethrough', 'superscript', 'subscript']],
+                    ['fontsize', ['fontsize']],
+                    ['color', ['color']],
+                    ['para', ['ul', 'ol', 'paragraph']],
+                    ['height', ['height']]
+                ]
+            });
         });
 
         $(document).on('click','#chkHistoria',function(){

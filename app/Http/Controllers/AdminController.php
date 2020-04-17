@@ -14,6 +14,6 @@ class AdminController extends Controller
 
     public function home()
     {
-        return view('admin.home',["infoUser"=>Auth::user()]);
+        return view('admin.home');
     }
 }

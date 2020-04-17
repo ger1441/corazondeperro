@@ -4,9 +4,15 @@ namespace App\Http\Controllers;
 
 use App\Animalitos;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class AnimalitoController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -14,7 +20,7 @@ class AnimalitoController extends Controller
      */
     public function index()
     {
-        //
+        return view('admin.rescataditos.index');
     }
 
     /**
@@ -24,7 +30,7 @@ class AnimalitoController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.rescataditos.create');
     }
 
     /**
@@ -35,7 +41,7 @@ class AnimalitoController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        dd($request);
     }
 
     /**

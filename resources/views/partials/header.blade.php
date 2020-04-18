@@ -5,7 +5,7 @@
             <img src="/images/logo.png" alt="Logo">
         </a>
         <nav id="nav" class="{{ $navClass }}">
-            <a href="/">Home</a>
+            <a href="/">Inicio</a>
             <a href="/adopta">Adopta</a>
             <a href="/apoyanos">Apóyanos</a>
         </nav>

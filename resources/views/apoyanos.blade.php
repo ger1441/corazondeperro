@@ -6,7 +6,7 @@
             <div class="row">
                 <div class="6u 12u$(small)">
                     <p><strong>Con mucho esfuerzo pero con gran voluntad, realizamos algunos trabajos para obtener recursos y ayudar a nuestros rescataditos.<br>
-                            Nos ponemos a tu disposición, nos puedes contactar y con gusto te atenderemos.</strong></p>
+                            Ponemos a tu disposición nuestros servicios, nos puedes contactar y con gusto te atenderemos.</strong></p>
                     <ul>
                         <li><strong>Servicio de estética canina.</strong></li>
                         <li><strong>Costura de prendas para mascotas.</strong></li>
@@ -20,8 +20,8 @@
             </div>
             <div class="justifyContent">
                 <h2>Otras maneras de apoyar</h2>
-                <p><strong>Como podrás notar, hacemos un gran esfuerzo para poder ayudar a los animalitos que lo necesiten, pero sin duda alguna tu ayuda es muy importante para nosotros.<br>
-                Hay temporadas en las que el trabajo escasea y difícilmente la gente nos puede apoyar solicitando servicios, sin embargo cualquier esfuerzo por ayudarnos, sea en efectivo o en especie (alimento, material de curación, material de limpieza) sin importar la cantidad, siempre será bien recibida.<br>
+                <p><strong>Como podrás notar, realizamos diferentes actividades para poder ayudar a los animalitos que lo necesiten, pero sin duda alguna tu ayuda es muy importante para nosotros.<br>
+                Hay temporadas en las que el trabajo escasea y difícilmente la gente nos puede apoyar solicitando servicios, sin embargo cualquier esfuerzo por ayudarnos, sea en <span class="font-blue">efectivo o en especie (alimento, material de curación, material de limpieza)</span>  sin importar la cantidad, siempre será bien recibido.<br>
                     ¡Muchas Gracias!</strong></p>
 
                 <form method="post" action="#">

@@ -8,6 +8,37 @@ body h2
     font-weight: 600;
 }
 
+.font-blue{
+    color: #5385c1 !important;
+}
+
+::-webkit-input-placeholder {
+    color: #a1a8ae !important;
+    opacity: 1.0;
+}
+
+:-moz-placeholder {
+    color: #a1a8ae !important;
+    opacity: 1.0;
+}
+
+::-moz-placeholder {
+    color: #a1a8ae !important;
+    opacity: 1.0;
+}
+
+:-ms-input-placeholder {
+    color: #a1a8ae !important;
+    opacity: 1.0;
+}
+
+.formerize-placeholder {
+    color: #a1a8ae !important;
+    opacity: 1.0;
+}
+
+
+
 /* For principal header */
 .sectionBanner
 {

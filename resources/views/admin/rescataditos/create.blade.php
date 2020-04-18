@@ -9,7 +9,7 @@
             <div class="form-row">
                 @if(session()->has('message'))
                     <div class="col-12 alert alert-success text-center my-3">
-                        {{ session()->get('message') }}
+                        <p><i class="fas fa-check-circle"></i> &nbsp;{{ session()->get('message') }}</p>
                     </div>
                 @endif
                 <div class="form-group col-sm-6 col-md-4">
@@ -85,6 +85,7 @@
                 </div>
                 <div class="col-12">
                     <button type="submit" class="btn btn-primary">Guardar &nbsp;<i class="far fa-save"></i></button>
+                    {{--<a href="{{url()->previous()}}" class="btn btn-outline-info ml-3">Cancelar <i class="fas fa-ban"></i></a>--}}
                 </div>
                 @if($errors->any())
                 <div class="col-12 my-3">

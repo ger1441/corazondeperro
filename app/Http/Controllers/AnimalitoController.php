@@ -25,7 +25,8 @@ class AnimalitoController extends Controller
      */
     public function index()
     {
-        return view('admin.rescataditos.index');
+        $animalito = new Animalito();
+        return view('admin.rescataditos.index',['animalitos'=>$animalito::all()]);
     }
 
     /**
@@ -62,10 +63,6 @@ class AnimalitoController extends Controller
         $newNameImage = "";
         if($request->hasFile('foto')){
             $newNameImage = $this->upload($request->foto,'images/rescataditos');
-            /*$auxExtension = $request->foto->extension();
-            $auxRand = mt_rand(100000,999999);
-            $newNameImage = $auxRand.".".$auxExtension;
-            $request->foto->storeAs('images/rescataditos',$newNameImage);*/
         }
 
         $animalito = new Animalito();
@@ -95,12 +92,6 @@ class AnimalitoController extends Controller
                 foreach ($request->fotos as $fotoH){
                     # Guardamos la imagen
                     $newNameImage = $this->upload($fotoH,'images/rescataditos/'.$animalito->id,$animalito->id.'_');
-
-                    /*$filename = $fotoH->getClientOriginalName();
-                    $auxExtension = $fotoH->getClientOriginalExtension();
-                    $auxRand = mt_rand(100000,999999);
-                    $newNameImage = $animalito->id."_".$auxRand.".".$auxExtension;
-                    $fotoH->storeAs('images/rescataditos/'.$animalito->id,$newNameImage);*/
 
                     $galeriaAnimalito = new AnimalitoGaleria();
                     $galeriaAnimalito->id_animalito = $animalito->id;

@@ -18,7 +18,7 @@ class CreateAnimalitosTable extends Migration
             $table->string('nombre',100);
             $table->enum('especie',['Perro','Gato'])->default('Perro');
             $table->enum('sexo',['Macho','Hembra'])->default('Macho');
-            $table->integer('edad')->default('6');
+            $table->enum('edad',['3-5 meses','6-11 meses','1-2 años','3-4 años','5+ años'])->default('1-2 años');
             $table->enum('talla',['N/A','Chica','Mediana','Grande'])->default('N/A');
             $table->text('description')->nullable();
             $table->string('foto',100)->nullable();

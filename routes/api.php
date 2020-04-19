@@ -19,5 +19,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::get('rescataditos',function(){
-
+    return datatables()
+        ->eloquent(App\Animalito::query())
+        ->toJson();
 });

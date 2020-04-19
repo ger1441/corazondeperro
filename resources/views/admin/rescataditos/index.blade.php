@@ -11,18 +11,18 @@
                 <table class="table table-bordered table-striped" id="tableRescataditos">
                     <thead>
                         <tr class="table-primary">
-                            <th rowspan="2">Nombre</th>
-                            <th rowspan="2">Especie</th>
-                            <th rowspan="2">Genero</th>
-                            <th colspan="3" class="text-center">Acciones</th>
+                            <th rowspan="1">Nombre</th>
+                            <th rowspan="1">Especie</th>
+                            <th rowspan="1">Genero</th>
+                            {{--<th colspan="3" class="text-center">Acciones</th>--}}
                         </tr>
-                        <tr>
+                        {{--<tr>
                             <th>Detalles</th>
                             <th>Editar</th>
                             <th>Eliminar</th>
-                        </tr>
+                        </tr>--}}
                     </thead>
-                    <tbody>
+                   {{-- <tbody>
                     @foreach($rescataditos as $rescatadito)
                         <tr>
                             <td>{{$rescatadito->nombre}}</td>
@@ -33,7 +33,7 @@
                             <td class="text-center"><i class="fa fa-trash"></i></td>
                         </tr>
                     @endforeach
-                    </tbody>
+                    </tbody>--}}
                 </table>
             </div>
         </div>
@@ -43,11 +43,18 @@
     <script>
         $(function () {
             $("#tableRescataditos").dataTable({
-                "columnDefs":[
+                "serverSide": true,
+                "ajax": "{{ url('api/rescataditos') }}",
+                "columns": [
+                    {data: 'nombre'},
+                    {data: 'especie'},
+                    {data: 'sexo'},
+                ],
+                /*"columnDefs":[
                     { "orderable": false, "targets":3 },
                     { "orderable": false, "targets":4 },
                     { "orderable": false, "targets":5 }
-                ]
+                ]*/
             });
         })
     </script>

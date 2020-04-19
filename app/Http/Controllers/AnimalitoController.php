@@ -26,7 +26,7 @@ class AnimalitoController extends Controller
     public function index()
     {
         $animalito = new Animalito();
-        return view('admin.rescataditos.index',['animalitos'=>$animalito::all()]);
+        return view('admin.rescataditos.index',['rescataditos'=>$animalito::all()]);
     }
 
     /**

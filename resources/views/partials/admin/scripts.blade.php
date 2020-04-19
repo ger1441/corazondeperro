@@ -11,7 +11,7 @@
 <!-- ChartJS -->
 <script src="/assets/admin/plugins/chart.js/Chart.min.js"></script>
 <!-- Sparkline -->
-<script src="/assets/admin/plugins/sparklines/sparkline.js"></script>
+{{--<script src="/assets/admin/plugins/sparklines/sparkline.js"></script>--}}
 <!-- JQVMap -->
 <script src="/assets/admin/plugins/jqvmap/jquery.vmap.min.js"></script>
 <script src="/assets/admin/plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
@@ -24,14 +24,19 @@
 <script src="/assets/admin/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
 <!-- Summernote -->
 <script src="/assets/admin/plugins/summernote/summernote-bs4.min.js"></script>
+<!-- DataTables -->
+<script src="/assets/admin/plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="/assets/admin/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script src="/assets/admin/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+<script src="/assets/admin/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
 <!-- overlayScrollbars -->
 <script src="/assets/admin/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
 <!-- AdminLTE App -->
 <script src="/assets/admin/dist/js/adminlte.js"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-<script src="/assets/admin/dist/js/pages/dashboard.js"></script>
+{{--<script src="/assets/admin/dist/js/pages/dashboard.js"></script>--}}
 <!-- AdminLTE for demo purposes -->
-<script src="/assets/admin/dist/js/demo.js"></script>
+{{--<script src="/assets/admin/dist/js/demo.js"></script>--}}
 
 <!-- Add Scripts -->
 @stack('scripts')

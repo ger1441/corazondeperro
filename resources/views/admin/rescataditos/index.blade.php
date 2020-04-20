@@ -11,29 +11,17 @@
                 <table class="table table-bordered table-striped" id="tableRescataditos">
                     <thead>
                         <tr class="table-primary">
-                            <th rowspan="1">Nombre</th>
-                            <th rowspan="1">Especie</th>
-                            <th rowspan="1">Genero</th>
-                            {{--<th colspan="3" class="text-center">Acciones</th>--}}
+                            <th rowspan="2">Nombre</th>
+                            <th rowspan="2">Especie</th>
+                            <th rowspan="2">Genero</th>
+                            <th colspan="3" class="text-center">Acciones</th>
                         </tr>
-                        {{--<tr>
+                        <tr>
                             <th>Detalles</th>
                             <th>Editar</th>
                             <th>Eliminar</th>
-                        </tr>--}}
-                    </thead>
-                   {{-- <tbody>
-                    @foreach($rescataditos as $rescatadito)
-                        <tr>
-                            <td>{{$rescatadito->nombre}}</td>
-                            <td>{{$rescatadito->especie}}</td>
-                            <td>{{$rescatadito->sexo}}</td>
-                            <td class="text-center"><i class="fa fa-eye"></i></td>
-                            <td class="text-center"><i class="fa fa-edit"></i></td>
-                            <td class="text-center"><i class="fa fa-trash"></i></td>
                         </tr>
-                    @endforeach
-                    </tbody>--}}
+                    </thead>
                 </table>
             </div>
         </div>
@@ -42,20 +30,45 @@
 @push('scripts')
     <script>
         $(function () {
-            $("#tableRescataditos").dataTable({
+            listar();
+        });
+
+        var listar = function(){
+            var table = $("#tableRescataditos").DataTable({
                 "serverSide": true,
                 "ajax": "{{ url('api/rescataditos') }}",
                 "columns": [
-                    {data: 'nombre'},
-                    {data: 'especie'},
-                    {data: 'sexo'},
+                    {"data": 'nombre'},
+                    {"data": 'especie'},
+                    {"data": 'sexo'},
+                    {"defaultContent": "<p style='margin:0 !important; text-align: center;'><i class='fa fa-eye'></i></p>","orderable":false},
+                    {"defaultContent": "<p style='margin:0 !important; text-align: center;'><i class='fa fa-edit'></i></p>","orderable":false},
+                    {"defaultContent": "<p style='margin:0 !important; text-align: center;'><i class='fa fa-trash'></i></p>","orderable":false}
                 ],
-                /*"columnDefs":[
-                    { "orderable": false, "targets":3 },
-                    { "orderable": false, "targets":4 },
-                    { "orderable": false, "targets":5 }
-                ]*/
+                "language": {
+                    search : "Búsqueda",
+                    lengthMenu: "Mostrar _MENU_ registros",
+                    info: "_START_ - _END_ [ _TOTAL_ elementos ]",
+                    infoEmpty: "No se encontraron coincidencias",
+                    infoFiltered: "(de un total de _MAX_ registros)",
+                    zeroRecords: "No hay resultados de su búsqueda",
+                    emptyTable: "Por el momento no hay registros",
+                    paginate: {
+                        first:      "Primero",
+                        previous:   "Anterior",
+                        next:       "Siguiente",
+                        last:       "Último"
+                    },
+                }
             });
-        })
+            obtenerData("#tableRescataditos tbody", table);
+        };
+
+        var obtenerData = function(tbody, table){
+            $(tbody).on("click",".fa-eye",function () {
+                var data = table.row( $(this).parents("tr") ).data();
+                console.log(data);
+            })
+        };
     </script>
 @endpush

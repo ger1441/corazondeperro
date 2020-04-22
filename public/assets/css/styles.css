@@ -12,6 +12,10 @@ body h2
     color: #5385c1 !important;
 }
 
+.enlace-decorate-none{
+    text-decoration: none !important;
+}
+
 ::-webkit-input-placeholder {
     color: #a1a8ae !important;
     opacity: 1.0;

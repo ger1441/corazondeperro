@@ -9,11 +9,13 @@
             <p><strong>Quizá creas que NO puedes cambiar el mundo, pero ten por seguro que sí puedes mejorarlo para un amigo.... <span class="font-blue">¡Adopta!</span></strong></p>
 
             <div class="12u">
-                <p class="text-center"><button class="button"><i class="fa fa-camera"></i> Galería</button></p>
+                <p class="text-center">
+                    <a href="#" class="button"><i class="fa fa-camera"></i> Galería</a>
+                </p>
             </div>
 
             <div>
-                <p><strong>Encuentra a tu próximo compañero de vida</strong></p>
+                <h3>¡Busca a tu próximo compañero de vida!</h3>
                 <form action="">
                     <div class="row uniform">
                         <div class="4u 12u$(xsmall)">

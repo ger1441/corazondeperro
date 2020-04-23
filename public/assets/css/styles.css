@@ -16,6 +16,10 @@ body h2
     text-decoration: none !important;
 }
 
+.text-center{
+    text-align: center;
+}
+
 ::-webkit-input-placeholder {
     color: #a1a8ae !important;
     opacity: 1.0;

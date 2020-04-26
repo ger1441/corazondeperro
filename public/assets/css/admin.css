@@ -1,0 +1,48 @@
+/* General */
+
+.icon-action
+{
+    cursor: pointer !important;
+}
+
+.parrafo-centrado
+{
+    margin: 0 !important;
+    text-align: center !important;
+}
+
+
+/* Galeria */
+.contendor-galeria
+{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.galeria_img
+{
+    width: 250px;
+    height: 200px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    object-fit: cover;
+    filter: brightness(80%);
+    /*animation: escalar 1.5s infinite;*/
+}
+    .galeria_img:hover
+    {
+        filter: brightness(100%);
+    }
+
+@keyframes escalar{
+    to{
+        transform: scale(1);
+    }
+    from{
+        transform: scale(1.1);
+    }
+}

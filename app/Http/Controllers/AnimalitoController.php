@@ -63,7 +63,7 @@ class AnimalitoController extends Controller
         # Guardamos la imagen
         $newNameImage = "";
         if($request->hasFile('foto')){
-            $newNameImage = $this->upload($request->foto,'images/rescataditos');
+            $newNameImage = $this->upload($request->foto,'public/images/rescataditos');
         }
 
         $animalito = new Animalito();
@@ -92,7 +92,7 @@ class AnimalitoController extends Controller
             if($request->hasFile('fotos')){
                 foreach ($request->fotos as $fotoH){
                     # Guardamos la imagen
-                    $newNameImage = $this->upload($fotoH,'images/rescataditos/'.$animalito->id,$animalito->id.'_');
+                    $newNameImage = $this->upload($fotoH,'public/images/rescataditos/'.$animalito->id,$animalito->id.'_');
 
                     $galeriaAnimalito = new AnimalitoGaleria();
                     $galeriaAnimalito->id_animalito = $animalito->id;
@@ -111,9 +111,10 @@ class AnimalitoController extends Controller
      * @param  \App\Animalito  $animalito
      * @return \Illuminate\Http\Response
      */
-    public function show(Animalito $animalito)
+    public function show($idAnimalito)
     {
-        //
+        $animalito = Animalito::where('id',"=",$idAnimalito)->with('animalitoHistoria','animalitoGaleria')->firstOrFail();
+        return view('/admin/rescataditos/show',["rescatadito"=>$animalito]);
     }
 
     /**

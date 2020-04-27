@@ -73,6 +73,9 @@
                     case 'show':
                         window.location.href = '/rescataditos/'+data.id;
                         break;
+                    case 'edit':
+                        window.location.href = '/rescataditos/'+data.id+'/edit';
+                        break;
                 }
             })
         };

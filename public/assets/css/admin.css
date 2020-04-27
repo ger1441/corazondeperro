@@ -11,6 +11,12 @@
     text-align: center !important;
 }
 
+.deleteElement
+{
+    cursor: pointer;
+    color: #e51d18;
+    font-weight: bold;
+}
 
 /* Galeria */
 .contendor-galeria
@@ -45,4 +51,25 @@
     from{
         transform: scale(1.1);
     }
+}
+
+/* Galeria en Editar */
+.content-image
+{
+    position: relative;
+}
+.content-image:hover .deleteElementGallery
+{
+    visibility: visible;
+}
+.deleteElementGallery
+{
+    visibility: hidden;
+    position: absolute;
+    top: 7px;
+    right: 12px;
+    padding: 3px 5px;
+    border: 2px solid red;
+    border-radius: 50%;
+    z-index: 999;
 }

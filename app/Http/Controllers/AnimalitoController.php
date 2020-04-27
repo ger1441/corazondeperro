@@ -6,7 +6,7 @@ use App\Animalito;
 use App\AnimalitoGaleria;
 use App\AnimalitoHistoria;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Storage;
 use App\Traits;
 
 class AnimalitoController extends Controller
@@ -123,9 +123,10 @@ class AnimalitoController extends Controller
      * @param  \App\Animalito  $animalito
      * @return \Illuminate\Http\Response
      */
-    public function edit(Animalito $animalito)
+    public function edit($idAnimalito)
     {
-        //
+        $animalito = Animalito::where('id',"=",$idAnimalito)->with('animalitoHistoria','animalitoGaleria')->firstOrFail();
+        return view('/admin/rescataditos/edit',["rescatadito"=>$animalito]);
     }
 
     /**
@@ -135,9 +136,65 @@ class AnimalitoController extends Controller
      * @param  \App\Animalito  $animalito
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Animalito $animalito)
+    public function update(Request $request, $idAnimalito)
     {
-        //
+        $validatedInfo = $request->validate([
+            'nombre' => 'required|string',
+            'especie' => 'required|string',
+            'genero' => 'required|string',
+            'talla' => 'required|string',
+            'edad' => 'required|string',
+        ]);
+
+        $animalito = Animalito::findOrFail($idAnimalito);
+
+        $mostrar = $request->boolean('chkMostrar');
+        $historia = $request->boolean('chkHistoria');
+
+        # Guardamos la imagen principal en caso de existir
+        $newNameImage = $animalito->foto;
+        if($request->hasFile('foto')){
+            $newNameImage = $this->upload($request->foto,'public/images/rescataditos');
+            # Borramos la imagen actual
+            Storage::delete("public/images/rescataditos/$animalito->foto");
+        }
+
+        $animalito->nombre = $request->nombre;
+        $animalito->especie = $request->especie;
+        $animalito->sexo = $request->genero;
+        $animalito->edad = $request->edad;
+        $animalito->talla = $request->talla;
+        $animalito->description = $request->descripcion;
+        $animalito->foto = $newNameImage;
+        $animalito->mostrar = $mostrar;
+        $animalito->save();
+
+        if($historia){
+            #Comprobamos si hay detalle de la historia y NO está vacía
+            #Se compara con la cadea <p><br></p> ya que es el valor vacío que asigna summernote
+            $detalleHistoria = ($request->historia != '<p><br></p>') ? $request->historia : "";
+            if($detalleHistoria!=""){
+                $historiaAnimalito = AnimalitoHistoria::where('id_animalito',$animalito->id)->firstOrFail();
+                $historiaAnimalito->id_animalito = $animalito->id;
+                $historiaAnimalito->historia = $detalleHistoria;
+                $historiaAnimalito->save();
+            }
+
+            #Comprobamos si cargaron imágenes para galería
+            if($request->hasFile('fotos')){
+                foreach ($request->fotos as $fotoH){
+                    # Guardamos la imagen
+                    $newNameImage = $this->upload($fotoH,'public/images/rescataditos/'.$animalito->id,$animalito->id.'_');
+
+                    $galeriaAnimalito = new AnimalitoGaleria();
+                    $galeriaAnimalito->id_animalito = $animalito->id;
+                    $galeriaAnimalito->foto = $newNameImage;
+                    $galeriaAnimalito->save();
+                }
+            }
+        }
+
+        return redirect("/rescataditos/$animalito->id/edit")->with('message','Actualización exitosa');
     }
 
     /**
@@ -146,8 +203,8 @@ class AnimalitoController extends Controller
      * @param  \App\Animalito  $animalito
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Animalito $animalito)
+    public function destroy($idAnimalito)
     {
-        //
+        dd($idAnimalito);
     }
 }

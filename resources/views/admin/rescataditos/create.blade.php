@@ -103,7 +103,7 @@
     </div>
 @endsection
 @push('scripts')
-    <script src="/assets/admin/plugins/summernote.css"></script>
+    <script src="/assets/admin/plugins/summernote/summernote.js"></script>
     <script>
         $(function(){
             $("#summernote").summernote({

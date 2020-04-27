@@ -38,5 +38,7 @@
 <!-- AdminLTE for demo purposes -->
 {{--<script src="/assets/admin/dist/js/demo.js"></script>--}}
 
+<script src="/assets/js/admin.js"></script>
+
 <!-- Add Scripts -->
 @stack('scripts')

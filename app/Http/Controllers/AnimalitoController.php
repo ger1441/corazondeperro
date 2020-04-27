@@ -174,10 +174,15 @@ class AnimalitoController extends Controller
             #Se compara con la cadea <p><br></p> ya que es el valor vacío que asigna summernote
             $detalleHistoria = ($request->historia != '<p><br></p>') ? $request->historia : "";
             if($detalleHistoria!=""){
-                $historiaAnimalito = AnimalitoHistoria::where('id_animalito',$animalito->id)->firstOrFail();
+                /*$historiaAnimalito = AnimalitoHistoria::where('id_animalito',$animalito->id)->firstOrFail();
                 $historiaAnimalito->id_animalito = $animalito->id;
                 $historiaAnimalito->historia = $detalleHistoria;
-                $historiaAnimalito->save();
+                $historiaAnimalito->save();*/
+
+                $historiaAnimalito = AnimalitoHistoria::updateOrCreate(
+                    ['id_animalito'=>$animalito->id],
+                    ['id_animalito'=>$animalito->id,'historia'=>$detalleHistoria]
+                );
             }
 
             #Comprobamos si cargaron imágenes para galería
@@ -191,6 +196,19 @@ class AnimalitoController extends Controller
                     $galeriaAnimalito->foto = $newNameImage;
                     $galeriaAnimalito->save();
                 }
+            }
+        }else{
+            #Comprobamos si hay historia para limpiarla
+            $historiaAnimalito = AnimalitoHistoria::where('id_animalito',$animalito->id)->first();
+            if($historiaAnimalito !== null ){
+                $historiaAnimalito->delete();
+            }
+
+            #Comprobamos si hay galería para limpiarla
+            $galeriaAnimalito = AnimalitoGaleria::where('id_animalito',$animalito->id)->get();
+            foreach ($galeriaAnimalito as $imagenGallery){
+                Storage::delete("public/images/rescataditos/$animalito->id/$imagenGallery->foto");
+                $imagenGallery->delete();
             }
         }
 

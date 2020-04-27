@@ -49,8 +49,8 @@
                     <div class="card p-2">
                         <label for="descripcion">Descripción</label>
                         <p>
-                            @if($rescatadito->descripcion)
-                                {{$rescatadito->descripcion}}
+                            @if($rescatadito->description)
+                                {{$rescatadito->description}}
                             @else
                                 Por el momento no hay más detalles
                             @endif

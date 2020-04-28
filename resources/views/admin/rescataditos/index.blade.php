@@ -26,9 +26,33 @@
             </thead>
         </table>
     </div>
+
+    <!-- Modal Confirm Delete Rescatadito -->
+    <div class="modal" tabindex="-1" role="dialog" id="modalConfirmDeleteRescatadito">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Eliminar registro</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="bodyDeleteImage">
+                    <p>¿Está seguro de eliminar el registro?<br>Se eliminará definitivamente</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-danger" id="btnDeleteRescatadito" data-loading-text="<span class='spinner-border spinner-border-sm'></span> Eliminando" data-id="">Eliminar</button>
+                </div>
+            </div>
+        </div>
+    </div>
 @endsection
 @push('scripts')
     <script>
+        var rowSelect = "";
+        var idSelect  = "";
+
         $(function () {
             listar();
         });
@@ -68,7 +92,8 @@
             $(tbody).on("click",".icon-action",function () {
                 var option = $(this).data('act');
                 var data = table.row( $(this).parents("tr") ).data();
-                console.log(data);
+                rowSelect = $(this).parents("tr");
+                idSelect  = data.id;
                 switch(option){
                     case 'show':
                         window.location.href = '/rescataditos/'+data.id;
@@ -76,8 +101,30 @@
                     case 'edit':
                         window.location.href = '/rescataditos/'+data.id+'/edit';
                         break;
+                    case 'delete':
+                        $("#modalConfirmDeleteRescatadito").modal('show');
+                        break;
                 }
             })
         };
+
+        $(document).on('click','#btnDeleteRescatadito',function(e){
+            $("#btnDeleteRescatadito").button('loading');
+            $.ajax({
+                'headers': {
+                  'X-CSRF-TOKEN' : "{{ csrf_token() }}"
+                },
+                'url' : '/rescataditos/'+idSelect,
+                'type' : 'delete',
+            }).done(function(data){
+                //console.log(data);
+                $("#modalConfirmDeleteRescatadito").modal('hide');
+                rowSelect.remove();
+                $("#btnDeleteRescatadito").button('reset');
+            }).fail(function(jqXHR,textStatus,errorThrown){
+                //console.log(jqXHR);
+                $("#btnDeleteRescatadito").button('reset');
+            });
+        })
     </script>
 @endpush

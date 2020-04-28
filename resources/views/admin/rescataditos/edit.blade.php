@@ -72,13 +72,6 @@
                         <option value="5+ años" @if($rescatadito->edad=="5+ años") selected @endif>5+ años</option>
                     </select>
                 </div>
-                {{--<div class="form-group col-sm-6 col-md-4">
-                    <label for="foto">Foto </label>
-                    <input type="file" name="foto" id="foto" class="form-control" accept="image/*" required>
-                    <small id="fotoHelpBlock" class="form-text text-muted">
-                        Se recomienda una imagen de <strong>160x160</strong> pixeles
-                    </small>
-                </div>--}}
                 <div class="form-group col-12">
                     <label for="descripcion">Descripción</label>
                     <textarea name="descripcion" id="descripcion" rows="2" class="form-control" placeholder="Aquí puede agregar detalles del animalito como color, estado actual, si tiene alguna condición especial, etc" style="resize: none;">{{$rescatadito->description}}</textarea>
@@ -101,10 +94,6 @@
                     <div id="summernote"></div>
                     <input type="hidden" name="historia" id="historia">
                 </div>
-                <!--<div class="form-group col-12 history d-none">
-                    <label for="historia">Historia</label>
-                    <textarea id="historia" rows="2" class="form-control" placeholder="Aquí puedes detallar la historia de este peludito" style="resize: none;"></textarea>
-                </div>-->
                 <div class="form-group col-md-4 history @if(!isset($rescatadito->animalitoHistoria->historia)&&count($rescatadito->animalitoGaleria)<1) d-none @endif">
                     <label for="fotos">Agregar Foto(s)</label>
                     <input type="file" name="fotos[]" id="fotos" class="form-control" accept="image/*" multiple>
@@ -241,7 +230,6 @@
         });
 
         $(document).on('click','#chkHistoria',function(){
-            console.log($(this).is(':checked'));
             if($(this).is(':checked')) $("div.history").removeClass('d-none');
             else $("div.history").addClass('d-none');
         });

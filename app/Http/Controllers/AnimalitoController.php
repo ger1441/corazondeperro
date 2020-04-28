@@ -223,6 +223,9 @@ class AnimalitoController extends Controller
      */
     public function destroy($idAnimalito)
     {
-        dd($idAnimalito);
+        $animalito = Animalito::findOrFail($idAnimalito);
+        $animalito->delete();
+
+        return response()->json(['res'=>'success','report'=>'']);
     }
 }

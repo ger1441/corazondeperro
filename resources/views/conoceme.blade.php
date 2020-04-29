@@ -66,30 +66,15 @@
                         <strong>Si estás interesado en adoptar a <span class="font-blue">{{$rescatadito->nombre}}</span> ponte en contacto con nosotros y trataremos de responderte a la brevedad.</strong><br>
                         <strong>Si por el momento NO puedes adoptar, agradeceríamos infinitamente tu <a href="/apoyanos">valioso apoyo</a>.</strong>
                     </p>
-                    <form method="post" action="#">
-                        <div class="row uniform">
-                            <div class="6u 12u$(xsmall)">
-                                <input type="text" name="name" id="name" value="" placeholder="Nombre" />
-                            </div>
-                            <div class="6u$ 12u$(xsmall)">
-                                <input type="email" name="email" id="email" value="" placeholder="Email" />
-                            </div>
-                            <!-- Break -->
-                            <div class="12u$">
-                                <textarea name="message" id="message" placeholder="Déjanos tu mensaje o comentario, gracias por apoyar!" rows="6" style="resize: none;"></textarea>
-                            </div>
-                            <!-- Break -->
-                            <div class="12u$">
-                                <ul class="actions">
-                                    <li><input type="submit" value="Enviar" /></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </form>
+                    @include('partials.form')
                 </div>
             </div>
         </div>
     </section>
 @endsection
+
+@push('scripts')
+    <script src="/assets/js/contact.js"></script>
+@endpush
 
 

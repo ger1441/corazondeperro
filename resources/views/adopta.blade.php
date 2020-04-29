@@ -104,7 +104,7 @@
                         $("#resultados").html(body);
                     }else $("#resultados").html('<div class="text-center"><p><strong>No hubo coincidencias en su búsqueda, intente con otros datos.</strong></p></div>');
                 }).error(function(e){
-                    alert("Por ell momento el servicio NO está disponible, disculpe las molestias");
+                    alert("Por el momento el servicio NO está disponible, disculpe las molestias");
                 });
             });
         });

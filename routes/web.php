@@ -26,6 +26,8 @@ Route::get('/apoyanos',function(){
     return view('apoyanos',['bodyClass'=>'subpage','navClass'=>'']);
 });
 
+Route::post('/mensaje','MensajeController@envio')->name('envioEmail');
+
 /* Administrador */
 Auth::routes();
 Route::get('/admin','AdminController@home')->name('home');

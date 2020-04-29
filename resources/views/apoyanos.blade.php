@@ -23,28 +23,12 @@
                 <p><strong>Como podrás notar, realizamos diferentes actividades para poder ayudar a los animalitos que lo necesiten, pero sin duda alguna tu ayuda es muy importante para nosotros.<br>
                 Hay temporadas en las que el trabajo escasea y difícilmente la gente nos puede apoyar solicitando servicios, sin embargo cualquier esfuerzo por ayudarnos, sea en <span class="font-blue">efectivo o en especie (alimento, material de curación, material de limpieza)</span>  sin importar la cantidad, siempre será bien recibido.<br>
                     ¡Muchas Gracias!</strong></p>
-
-                <form method="post" action="#">
-                    <div class="row uniform">
-                        <div class="6u 12u$(xsmall)">
-                            <input type="text" name="name" id="name" value="" placeholder="Nombre" />
-                        </div>
-                        <div class="6u$ 12u$(xsmall)">
-                            <input type="email" name="email" id="email" value="" placeholder="Email" />
-                        </div>
-                        <!-- Break -->
-                        <div class="12u$">
-                            <textarea name="message" id="message" placeholder="Déjanos tu mensaje o comentario, gracias por apoyar!" rows="6" style="resize: none;"></textarea>
-                        </div>
-                        <!-- Break -->
-                        <div class="12u$">
-                            <ul class="actions">
-                                <li><input type="submit" value="Enviar" /></li>
-                            </ul>
-                        </div>
-                    </div>
-                </form>
+                @include('partials.form')
             </div>
         </div>
     </section>
 @endsection
+
+@push('scripts')
+    <script src="/assets/js/contact.js"></script>
+@endpush

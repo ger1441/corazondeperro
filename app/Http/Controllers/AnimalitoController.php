@@ -228,4 +228,11 @@ class AnimalitoController extends Controller
 
         return response()->json(['res'=>'success','report'=>'']);
     }
+
+    /* Conoceme ( Seccion de Adopta) */
+    public function conoceme($idAnimalito)
+    {
+        $animalito = Animalito::where('id',"=",$idAnimalito)->with('animalitoHistoria','animalitoGaleria')->firstOrFail();
+        return view('conoceme',['rescatadito'=>$animalito,'bodyClass'=>'subpage','navClass'=>'']);
+    }
 }

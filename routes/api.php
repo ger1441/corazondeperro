@@ -36,3 +36,20 @@ Route::delete('rescataditos/{id_animalito}/{id_imagen}/delete',function($idA,$id
 
     return response()->json(['res'=>'success','report'=>'']);
 });
+
+/* Busqueda de rescataditos desde la página de Adopción */
+Route::post('/adopta/busqueda',function(Request $request){
+    $especie = $request->especie;
+    $genero  = $request->genero;
+    $talla   = $request->talla;
+
+    $arraySearch['especie'] = $especie;
+    if($genero!='Todos') $arraySearch['sexo'] = $genero;
+    if($talla!='Todos') $arraySearch['talla'] = $talla;
+
+
+    $rescataditos = Animalito::where($arraySearch)->get();
+
+    return response()->json($rescataditos);
+
+});

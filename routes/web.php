@@ -20,6 +20,7 @@ Route::get('/', function () {
 Route::get('/adopta', function(){
     return view('adopta',['bodyClass'=>'subpage','navClass'=>'']);
 });
+Route::get('/adopta/{id}/conoceme','AnimalitoController@conoceme')->name('conoceme');
 
 Route::get('/apoyanos',function(){
     return view('apoyanos',['bodyClass'=>'subpage','navClass'=>'']);

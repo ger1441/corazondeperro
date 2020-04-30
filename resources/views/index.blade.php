@@ -24,7 +24,7 @@
 <section class="wrapper sectionPrincipal">
     <div class="inner justifyContent">
         <h2>Nuestra Historia</h2>
-        <p><span class="image left"><img src="images/rufita.png" alt="Rufita" /></span><h4><strong>Todo comenzó con Rufita.</strong></h4>
+        <p><span class="image left"><img src="images/rufita.png" alt="Rufita" id="rufita" /></span><h4><strong>Todo comenzó con Rufita.</strong></h4>
         <p><strong>Hace algunos años, en 2008, rescaté a una perrita que se encontraba en posesión de unos vecinos los cuáles desafortunadamente se drogaban.  Me dolió ver el estado en el que estaba y que aparte no tenía como atajarse del sol o la lluvia. Insistí e insistí, hasta que un día me dijeron <span class="font-blue"><i>“Ten, llévatela”</i></span><br> Era pastor inglés.</strong></p>
         <p><strong>Un día mi hermano y ella salieron a caminar juntos, para mala fortuna de ambos, una persona en estado de ebriedad los atropelló y Rufita resultó herida de gravedad.</strong></p>
 
@@ -137,38 +137,67 @@
     <div class="inner">
         <header>
             <h2>Un pequeño agradecimiento</h2>
-            <p>Para TODOS aquellos que en su momento nos han apodido apoyar en la medida de sus posibilidades... ¡¡GRACIAS!!</p>
-            <p>Un detalle para ustedes que no se han olvidado de nosotros</p>
+            <h3>Para TODOS aquellos que nos han ayudado en la medida de sus posibilidades... ¡¡GRACIAS!!</h3>
         </header>
+        <div class="row">
+            <div class="12u">
+                <h3 class="text-center">Un detalle a los Médicos Veterinarios que siempre nos han apoyado en todo sentido</h3>
+            </div>
+        </div>
         <div class="flex flex-4">
             <div class="box person">
                 <div class="image round">
-                    <img src="images/agradecimientos/marza.png" alt="Marza" />
+                    <img src="images/mvz/01.jpg" alt="Sebastian Capuleño" />
                 </div>
-                <h3>Marza</h3>
-                <p>Coffe & Bar</p>
+                <h3>Sebastían Capuleño</h3>
+                <p>MVZ</p>
             </div>
             <div class="box person">
                 <div class="image round">
-                    <img src="images/agradecimientos/valkiria.png" alt="Valkiria" />
+                    <img src="images/mvz/02.jpg" alt="Angel Ortega" />
                 </div>
-                <h3>Valkiria</h3>
-                <p>CrossFit</p>
+                <h3>Ángel Ortega</h3>
+                <p>MVZ</p>
             </div>
             <div class="box person">
                 <div class="image round">
-                    <img src="images/agradecimientos/soto.png" alt="Soto" />
+                    <img src="images/mvz/03.jpg" alt="Antonio Espejel" />
                 </div>
-                <h3>JC Soto</h3>
-                <p>Cantante Versatil</p>
+                <h3>Antonio Espejel</h3>
+                <p>MVZ</p>
             </div>
-            <div class="box person">
-                <div class="image round">
-                    <img src="images/agradecimientos/lobosc.png" alt="Lobos Calpulalpan" />
-                </div>
-                <h3>Lobos Calpulalpan</h3>
-                <p>Futbol Club</p>
+        </div>
+
+        <div class="row">
+            <div class="12u">
+                <h3 class="text-center">Una especial mención a todos los que han tratado de mantener un constante apoyo para nuestra labor</h3>
             </div>
+        </div>
+        <div class="table-wrapper">
+            <table class="alt">
+                <tbody>
+                <tr>
+                    <td>Valkiria</td>
+                    <td>CrossFit Calpulalpan, Tlaxcala</td>
+                </tr>
+                <tr>
+                    <td>Marza</td>
+                    <td>Coffe & Bar</td>
+                </tr>
+                <tr>
+                    <td>Templario</td>
+                    <td>Luchador Profesional del CMLL</td>
+                </tr>
+                <tr>
+                    <td>JC Soto</td>
+                    <td>Cantante Versátil</td>
+                </tr>
+                <tr>
+                    <td>Lobos Calpulalpan</td>
+                    <td>Fútbol Club</td>
+                </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 </section>

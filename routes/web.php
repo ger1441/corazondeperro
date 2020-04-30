@@ -32,6 +32,7 @@ Route::post('/mensaje','MensajeController@envio')->name('envioEmail');
 Auth::routes();
 Route::get('/admin','AdminController@home')->name('home');
 Route::resource('/rescataditos','AnimalitoController');
+Route::get('/mensajes','MensajeController@index')->name('mensajes')->middleware('auth');
 
 Route::get('/test',function() {
     return view('test',['bodyClass'=>'subpage','navClass'=>'']);

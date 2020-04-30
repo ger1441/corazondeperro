@@ -25,6 +25,17 @@ Route::get('rescataditos',function(){
         ->toJson();
 });
 
+Route::get('mensajes',function(){
+    /*return datatables()
+        ->eloquent(App\ Mensaje::query())
+        ->toJson();*/
+    $mensajes = \App\Mensaje::all();
+    return datatables()::of($mensajes)->editColumn('created_at',function ($mensaje){
+        return date('d-m-Y H:i:s',strtotime($mensaje->created_at));
+    })->make(true);
+});
+Route::delete('mensaje/{id}','MensajeController@delete')->name('deleteMessage');
+
 /* Eliminar imagen de Galería de un Rescatadito */
 Route::delete('rescataditos/{id_animalito}/{id_imagen}/delete',function($idA,$idI){
     $imageGallery = AnimalitoGaleria::findOrFail($idI);

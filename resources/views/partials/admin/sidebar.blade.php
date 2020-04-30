@@ -39,13 +39,13 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="/mensajes" class="nav-link">
                         <i class="far fa-envelope nav-icon"></i>
                         <p>Mensajes</p>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="/agradecimientos" class="nav-link">
                         <i class="fas fa-award nav-icon"></i>
                         <p>Agradecimientos</p>
                     </a>

@@ -7,6 +7,13 @@ use Illuminate\Http\Request;
 
 class MensajeController extends Controller
 {
+
+    public function index()
+    {
+        //$mensajes = Mensaje::orderBy('updated_at','desc')->get();
+        return view('admin.mensajes.index');
+    }
+
     public function envio(Request $request)
     {
         //dd($request);
@@ -38,5 +45,13 @@ class MensajeController extends Controller
             $response['report'] = 'Por el momento NO puede enviar mensajes. Intente más tarde por favor';
         }
         return response()->json($response);
+    }
+
+    public function delete($id)
+    {
+        $mensaje = Mensaje::findOrFail($id);
+        $mensaje->delete();
+
+        return response()->json(['result'=>'success']);
     }
 }

@@ -8,7 +8,7 @@
     <!-- Open Graph -->
     <meta property="og:title" content="@if(isset($openGraph['title'])){{$openGraph['title']}}@else Calpulalpan Corazon de Perro @endif">
     <meta property="og:type" content="@if(isset($openGraph['type'])){{$openGraph['type']}}@else website @endif">
-    <meta property="og:imagen" content="@if(isset($openGraph['image'])){{$openGraph['image']}}@else https://www.calpuscorazondeperro.com/images/logo_open_graph.png @endif">
+    <meta property="og:image" content="@if(isset($openGraph['image'])){{$openGraph['image']}}@else https://www.calpuscorazondeperro.com/images/logo_open_graph.png @endif">
     <meta property="og:url" content="@if(isset($openGraph['url'])){{$openGraph['url']}}@else https://www.calpuscorazondeperro.com/ @endif">
     <meta property="og:description" content="@if(isset($openGraph['description'])){{$openGraph['description']}}@else Ayudamos a animalitos con alguna discapacidad, atropellados, o enfermos (NO SOMOS UNA FUNDACIÓN NI ASOCIACIÓN). @endif">
 

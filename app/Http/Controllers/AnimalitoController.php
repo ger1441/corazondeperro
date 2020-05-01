@@ -15,7 +15,7 @@ class AnimalitoController extends Controller
 
     public function __construct()
     {
-        $this->middleware('auth');
+        $this->middleware('auth',['except'=>['conoceme']]);
     }
 
     /**
@@ -233,6 +233,14 @@ class AnimalitoController extends Controller
     public function conoceme($idAnimalito)
     {
         $animalito = Animalito::where('id',"=",$idAnimalito)->with('animalitoHistoria','animalitoGaleria')->firstOrFail();
-        return view('conoceme',['rescatadito'=>$animalito,'bodyClass'=>'subpage','navClass'=>'']);
+        return view('conoceme',['rescatadito'=>$animalito,'bodyClass'=>'subpage','navClass'=>'', 'title'=>'Adopta | Calpulalpan Corazon de Perro',
+                    'openGraph'=>[
+                        'title'=>'Adopta a '.$animalito->nombre,
+                        'type'=>'website',
+                        'image'=>'https://www.calpuscorazondeperro.com/storage/images/rescataditos/'.$animalito->foto,
+                        'url'=>'https://www.calpuscorazondeperro.com/adopta/'.$animalito->id.'/conoceme',
+                        'description'=>$animalito->nombre.' está a la espera de un nuevo hogar. No compres, adopta!',
+                    ]
+               ]);
     }
 }

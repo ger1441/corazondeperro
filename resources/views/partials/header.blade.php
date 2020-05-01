@@ -5,10 +5,10 @@
             <img src="/images/logo.png" alt="Logo">
         </a>
         <nav id="nav" class="{{ $navClass }}">
-            <a href="/">Inicio</a>
-            <a href="/adopta">Adopta</a>
-            <a href="/apoyanos">Apóyanos</a>
+            <a href="/" title="Home">Inicio</a>
+            <a href="/adopta" title="Adopta">Adopta</a>
+            <a href="/apoyanos" title="Apoyanos">Apóyanos</a>
         </nav>
-        <a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+        <a href="#navPanel" title="Menú" class="navPanelToggle"><span class="fa fa-bars"></span></a>
     </div>
 </header>

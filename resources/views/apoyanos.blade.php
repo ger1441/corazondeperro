@@ -13,10 +13,10 @@
                         <li><strong>Costura de prendas para mascotas.</strong></li>
                         <li><strong>Ventas de garage con lo que amablemente nos puedan donar.</strong></li>
                     </ul>
-                    <p><strong>De igual forma te pedimos nos ayudes a difundir con tus amigos, familiares y contactos nuestra página web y nuestro <a href="https://www.facebook.com/calpulalpancorazondeperro/" target="_blank" class="linkWithoutDecoration">grupo en Facebook</a></strong></p>
+                    <p><strong>De igual forma te pedimos nos ayudes a difundir con tus amigos, familiares y contactos nuestra página web y nuestro <a href="https://www.facebook.com/calpulalpancorazondeperro/" target="_blank" class="linkWithoutDecoration" title="Grupo en Facebook">grupo en Facebook</a></strong></p>
                 </div>
                 <div class="6u 12u$(small)">
-                    <img src="images/servicios.jpg" alt="Servicios" class="image fit">
+                    <img src="images/servicios.jpg" alt="Nuestros Servicios" class="image fit">
                 </div>
             </div>
             <div class="justifyContent">

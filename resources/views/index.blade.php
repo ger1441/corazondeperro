@@ -36,7 +36,7 @@
         <p><strong>De ésta historia nace la iniciativa de ayudar a peluditos que han sido agredidos, maltratados, violentados, atropellados… algunos discapacitados y otros enfermos.
                 Han sido <span class="font-blue">años de lucha constante</span>, pero siempre con la mentalidad y voluntad para apoyar a esos animalitos que han sufrido bastante.</strong></p>
 
-        <p><span class="image right"><img src="images/logo_historia.png" alt="Logo" /></span><strong>No solo hemos ayudado a perritos, también hemos ayudado a gatos, caballos, aves y uno que otro animalito de diferente especie.<br>
+        <p><span class="image right"><img src="images/logo_historia.png" alt="Logo Calpulalpan Corazon de Perro" /></span><strong>No solo hemos ayudado a perritos, también hemos ayudado a gatos, caballos, aves y uno que otro animalito de diferente especie.<br>
                 Con lo que logró juntar de algunos trabajos de estética canina y con la ayuda de mi esposo e hijas hemos logrado salir adelante, al igual que con el apoyo de algunas personas que se acuerdan de nosotros y nuestros rescataditos.</strong></p>
 
         <p><strong>Y aunque hay temporadas que no cuento con mucha ayuda, espero en Dios <span class="font-blue">seguir con la fortaleza</span> para continuar con ésta gran labor y seguir ayudando animalitos a tener una mejor vida, una vida digna &#128522;</strong></p>
@@ -60,7 +60,7 @@
                 </header>
                 <p><strong>En esta labor he encontrado más que un objetivo o un sueño, un motivo para seguir adelante. Una realidad por la cuál vale la pena luchar y sin duda tratar de cambiar.</strong></p>
                 <footer>
-                    <a href="#" class="openModal button special fit icon fa-camera" data-modal="Familia">Galeria</a>
+                    <a href="#" class="openModal button special fit icon fa-camera" data-modal="Familia" title="Galeria Familia">Galeria</a>
                 </footer>
             </article>
             <article class="justifyContent">
@@ -72,7 +72,7 @@
                 </header>
                 <p><strong>Si bien hemos tratado de apoyar a cualquier animalito que lo necesite, nos hemos enfocado en algunos peluditos que necesitan atención especial o algún tratamiento para seguir adelante.</strong></p>
                 <footer>
-                    <a href="#" class="openModal button special fit icon fa-camera" data-modal="Oportunidades">Galeria</a>
+                    <a href="#" class="openModal button special fit icon fa-camera" data-modal="Oportunidades" title="Galeria Oportunidades">Galeria</a>
                 </footer>
             </article>
         </div>
@@ -85,15 +85,15 @@
         <div class="contenido-modal">
             <div class="modal-header flex">
                 <h2>Somos una familia <span class="spanClose closeFamilia" data-modal="Familia">&times;</span></h2>
-                <p>Actualmente somos más de 70 integrantes en ésta gran familia, agradeceríamos mucho tu <a href="/apoyanos">apoyo</a></p>
+                <p>Actualmente somos más de 70 integrantes en ésta gran familia, agradeceríamos mucho tu <a href="/apoyanos" title="Apoyanos">apoyo</a></p>
             </div>
             <div class="modal-body">
-                <span class="image fit" id="imagePFamilia" data-image="images/familia.png"><img src="images/familia.png" alt="" /></span>
+                <span class="image fit" id="imagePFamilia" data-image="images/familia.png"><img src="images/familia.png" alt="Familia 01" /></span>
                 <div class="box alt">
                     <div class="row 50% uniform">
-                        <div class="4u"><span class="image fit imageFit" data-target="imagePFamilia" data-image="images/familia/01.png"><img src="images/familia/01.png" alt="" /></span></div>
-                        <div class="4u"><span class="image fit imageFit" data-target="imagePFamilia" data-image="images/familia/02.png"><img src="images/familia/02.png" alt="" /></span></div>
-                        <div class="4u$"><span class="image fit imageFit" data-target="imagePFamilia" data-image="images/familia/03.png"><img src="images/familia/03.png" alt="" /></span></div>
+                        <div class="4u"><span class="image fit imageFit" data-target="imagePFamilia" data-image="images/familia/01.png"><img src="images/familia/01.png" alt="Familia 02" /></span></div>
+                        <div class="4u"><span class="image fit imageFit" data-target="imagePFamilia" data-image="images/familia/02.png"><img src="images/familia/02.png" alt="Familia 03" /></span></div>
+                        <div class="4u$"><span class="image fit imageFit" data-target="imagePFamilia" data-image="images/familia/03.png"><img src="images/familia/03.png" alt="Familia 04" /></span></div>
                         {{--<!-- Break -->
                         <div class="4u"><span class="image fit"><img src="images/familia/01.png" alt="" /></span></div>
                         <div class="4u"><span class="image fit"><img src="images/familia/02.png" alt="" /></span></div>
@@ -116,12 +116,12 @@
                 <p>Hemos cobijado a peluditos con alguna discapacidad, agradeceríamos mucho tu <a href="/apoyanos">apoyo</a></p>
             </div>
             <div class="modal-body">
-                <span class="image fit" id="imagePOportunidades" data-image="images/oportunidades.png"><img src="images/oportunidades.png" alt="" /></span>
+                <span class="image fit" id="imagePOportunidades" data-image="images/oportunidades.png"><img src="images/oportunidades.png" alt="Oportunidades 01" /></span>
                 <div class="box alt">
                     <div class="row 50% uniform">
-                        <div class="4u"><span class="image fit imageFit" data-target="imagePOportunidades" data-image="images/oportunidades/01.png"><img src="images/oportunidades/01.png" alt="" /></span></div>
-                        <div class="4u"><span class="image fit imageFit" data-target="imagePOportunidades" data-image="images/oportunidades/02.png"><img src="images/oportunidades/02.png" alt="" /></span></div>
-                        <div class="4u$"><span class="image fit imageFit" data-target="imagePOportunidades" data-image="images/oportunidades/03.png"><img src="images/oportunidades/03.png" alt="" /></span></div>
+                        <div class="4u"><span class="image fit imageFit" data-target="imagePOportunidades" data-image="images/oportunidades/01.png"><img src="images/oportunidades/01.png" alt="Oportunidades 02" /></span></div>
+                        <div class="4u"><span class="image fit imageFit" data-target="imagePOportunidades" data-image="images/oportunidades/02.png"><img src="images/oportunidades/02.png" alt="Oportunidades 03" /></span></div>
+                        <div class="4u$"><span class="image fit imageFit" data-target="imagePOportunidades" data-image="images/oportunidades/03.png"><img src="images/oportunidades/03.png" alt="Oportunidades 04" /></span></div>
                     </div>
                 </div>
             </div>

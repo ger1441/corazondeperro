@@ -44,12 +44,14 @@
                         <p>Mensajes</p>
                     </a>
                 </li>
+                @if(Auth::user()->role == 'Webmaster')
                 <li class="nav-item">
                     <a href="/agradecimientos" class="nav-link">
                         <i class="fas fa-award nav-icon"></i>
                         <p>Agradecimientos</p>
                     </a>
                 </li>
+                @endif
             </ul>
         </nav>
         <!-- /.sidebar-menu -->

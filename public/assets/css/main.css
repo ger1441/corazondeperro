@@ -2004,8 +2004,8 @@
 		background: rgba(144, 144, 144, 0.075);
 		border-radius: 0;
 		border: none;
-		border: solid 1px #dbdbdb;
-		color: inherit;
+		border: solid 1px #9f9f9f;
+		color: #555;
 		display: block;
 		outline: 0;
 		padding: 0 1em;

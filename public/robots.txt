@@ -3,3 +3,4 @@ Disallow: /login
 Disallow: /admin
 Disallow: /storage
 Disallow: /assets
+Sitemap: https://www.calpuscorazondeperro.com/sitemap.xml

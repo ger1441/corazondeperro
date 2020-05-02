@@ -236,7 +236,7 @@ class AnimalitoController extends Controller
         return view('conoceme',['rescatadito'=>$animalito,'bodyClass'=>'subpage','navClass'=>'', 'title'=>'Adopta | Calpulalpan Corazon de Perro',
                     'openGraph'=>[
                         'title'=>'Adopta a '.$animalito->nombre,
-                        'type'=>'article',
+                        'type'=>'website',
                         'image'=>'https://www.calpuscorazondeperro.com/storage/images/rescataditos/'.$animalito->foto,
                         'url'=>'https://www.calpuscorazondeperro.com/adopta/'.$animalito->id.'/conoceme',
                         'description'=>$animalito->nombre.' está a la espera de un nuevo hogar. No compres, adopta!',

@@ -153,14 +153,14 @@
         <div class="flex flex-4 flexVeterinarios">
             <div class="box person">
                 <div class="image round">
-                    <img src="images/mvz/01.jpg" alt="Angel Ortega" />
+                    <img src="images/mvz/angel.png" alt="Angel Ortega" />
                 </div>
                 <h3>Ángel Ortega</h3>
                 <p>MVZ</p>
             </div>
             <div class="box person">
                 <div class="image round">
-                    <img src="images/mvz/03.jpg" alt="Antonio Espejel" />
+                    <img src="images/mvz/antonio.png" alt="Antonio Espejel" />
                 </div>
                 <h3>Antonio Espejel</h3>
                 <p>MVZ</p>

@@ -16,7 +16,7 @@
                     <a href="#" class="button" title="Galeria Adopción"><i class="fa fa-camera"></i> Galería</a>
                 </p>
             </div>
-            
+
             <p><strong>Quizá creas que NO puedes cambiar el mundo... pero ten por seguro que SÍ puedes mejorarlo <br> <span class="font-blue">¡Adopta!</span></strong></p>
 
 

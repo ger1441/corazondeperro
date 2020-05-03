@@ -16,7 +16,7 @@
                             <li><strong>Eventos de adopción.</strong></li>
                         </ul>
                     </div>
-                    <p><strong>De igual forma te pedimos nos ayudes a difundir con tus amigos, familiares y contactos nuestra página web y nuestra <a href="https://www.facebook.com/calpulalpancorazondeperro/" target="_blank" class="linkWithoutDecoration" title="Grupo en Facebook">página en Facebook</a></strong></p>
+                    <p><strong>De igual forma te pedimos nos ayudes a difundir con tus amigos, familiares y contactos nuestra página web y nuestra <a href="https://www.facebook.com/calpulalpancorazondeperro/" target="_blank" class="linkWithoutDecoration" title="Grupo en Facebook">página en Facebook</a>, al igual que con tu suscripción a nuestro <a href="https://www.youtube.com/channel/UC_gvAqiI7XPbAGdc0pozpVg" target="_blank" class="linkWithoutDecoration">canal de YouTube</a> </strong></p>
                 </div>
                 <div class="6u 12u$(small)">
                     <img src="images/servicios.jpg" alt="Nuestros Servicios" class="image fit">

@@ -87,7 +87,7 @@ body h2
     text-align: justify !important;
 }
 
-img#rufita
+img.borderBlue
 {
     border: 3px solid #5385c1;
     padding: 5px;

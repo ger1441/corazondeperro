@@ -10,13 +10,16 @@
             <h2>¡Encuentra a un Amigo!</h2>
             <p><strong>Si nos sigues en <a href="https://www.facebook.com/calpulalpancorazondeperro/" target="_blank" class="font-blue enlace-decorate-none" title="Pagina en Facebook">Facebook</a> habrás visto las terribles y desgarradoras historias a las que nos hemos enfrentado, muchos animalitos que han sido maltratados cruelmente y abandonados a su suerte. <br><br>
                     Pero ésta vez queremos hacer énfasis en lo contrario, queremos enfocarnos en aquellos casos que han brindado una <span class="font-blue">segunda oportunidad</span>, aquellos casos de animalitos que afortunadamente, gracias a personas de buen corazón han encontrado un nuevo hogar.</strong></p>
-            <p><strong>Quizá creas que NO puedes cambiar el mundo... pero ten por seguro que SÍ puedes mejorarlo <br> <span class="font-blue">¡Adopta!</span></strong></p>
 
             <div class="12u">
                 <p class="text-center">
                     <a href="#" class="button" title="Galeria Adopción"><i class="fa fa-camera"></i> Galería</a>
                 </p>
             </div>
+            
+            <p><strong>Quizá creas que NO puedes cambiar el mundo... pero ten por seguro que SÍ puedes mejorarlo <br> <span class="font-blue">¡Adopta!</span></strong></p>
+
+
 
             <div>
                 <h3>¡Busca a tu próximo compañero de vida!</h3>

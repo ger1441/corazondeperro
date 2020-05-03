@@ -17,6 +17,12 @@
         <p><strong>Somos la materialización de la <span class="font-blue">conciencia</span> que se tiene del abandono, de la injusticia y del sufrimiento.<br>
             Somos el espacio físico real de la <span class="font-blue">esperanza</span>.</strong></p>
         <p><strong>Calpulalpan Corazón de Perro es un lugar que te marcará para siempre, en donde se recibe al <span class="font-blue">amor</span> en estado puro.</strong></p>
+        <div class="box boxImportant">
+            <h3>IMPORTANTE!!!</h3>
+            <p><strong>Nuestra labor está <span class="font-blue">enfocada a perritos especiales:</span> amputados, ciegos, enfermos, atropellados, que han sido abandonados a su suerte.<br>
+                       Nosotros NO podemos albergar a las mascotas que simplemente la gente ya NO quiere o puede tener, evítanos la pena de negarle un espacio, si gustas podemos apoyarte a buscarle un nuevo hogar.<br>
+                       <span class="font-blue">Por favor se consciente</span> de TODO lo que implica un animalito, actualmente tenemos más de 70 perritos y varios gatitos.</strong></p>
+        </div>
     </div>
 </section>
 
@@ -25,7 +31,7 @@
     <div class="inner justifyContent">
         <h2>Nuestra Historia</h2>
         <p><span class="image left"><img src="images/rufita.png" alt="Rufita" id="rufita" /></span><h4><strong>Todo comenzó con Rufita.</strong></h4>
-        <p><strong>Hace algunos años, en 2008, rescaté a una perrita que se encontraba en posesión de unos vecinos los cuáles desafortunadamente se drogaban.  Me dolió ver el estado en el que estaba y que aparte no tenía como atajarse del sol o la lluvia. Insistí e insistí, hasta que un día me dijeron <span class="font-blue"><i>“Ten, llévatela”</i></span><br> Era pastor inglés.</strong></p>
+        <p><strong>Hace algunos años, en <span class="font-blue">2008</span>, rescaté a una perrita que se encontraba en posesión de unos vecinos los cuáles desafortunadamente se drogaban.  Me dolió ver el estado en el que estaba y que aparte no tenía como atajarse del sol o la lluvia. Insistí e insistí, hasta que un día me dijeron <span class="font-blue"><i>“Ten, llévatela”</i></span><br> Era pastor inglés.</strong></p>
         <p><strong>Un día mi hermano y ella salieron a caminar juntos, para mala fortuna de ambos, una persona en estado de ebriedad los atropelló y Rufita resultó herida de gravedad.</strong></p>
 
         <p><strong>
@@ -33,11 +39,11 @@
                 pero mi mamá me explicó que debía dejar correr la vida, sin odio ni resentimiento y que si quería mantener un buen recuerdo de Rufa, lo mejor era <span class="font-blue">hacer algo positivo</span> para honrar su memoria.
             </strong></p>
 
-        <p><strong>De ésta historia nace la iniciativa de ayudar a peluditos que han sido agredidos, maltratados, violentados, atropellados… algunos discapacitados y otros enfermos.
+        <p><strong>A la semana de su deceso, un <span class="font-blue">3 de Mayo</span>, encontré a un perrito atropellado, no pude evitar pensar en Rufa... y así es como nace la iniciativa de ayudar a peluditos que han sido agredidos, maltratados, violentados, atropellados… algunos discapacitados y otros enfermos.
                 Han sido <span class="font-blue">años de lucha constante</span>, pero siempre con la mentalidad y voluntad para apoyar a esos animalitos que han sufrido bastante.</strong></p>
 
         <p><span class="image right"><img src="images/logo_historia.png" alt="Logo Calpulalpan Corazon de Perro" /></span><strong>No solo hemos ayudado a perritos, también hemos ayudado a gatos, caballos, aves y uno que otro animalito de diferente especie.<br>
-                Con lo que logró juntar de algunos trabajos de estética canina y con la ayuda de mi esposo e hijas hemos logrado salir adelante, al igual que con el apoyo de algunas personas que se acuerdan de nosotros y nuestros rescataditos.</strong></p>
+                Con lo que logró juntar de algunos trabajos de estética canina y con la ayuda de mi esposo, hijo e hija, hemos logrado salir adelante, al igual que con el apoyo de algunas personas que se acuerdan de nosotros y nuestros rescataditos.</strong></p>
 
         <p><strong>Y aunque hay temporadas que no cuento con mucha ayuda, espero en Dios <span class="font-blue">seguir con la fortaleza</span> para continuar con ésta gran labor y seguir ayudando animalitos a tener una mejor vida, una vida digna &#128522;</strong></p>
     </div>
@@ -83,7 +89,7 @@
 <div id="modalFamilia" class="modal">
     <div class="flexModal" id="flexFamilia" data-modal="Familia">
         <div class="contenido-modal">
-            <div class="modal-header flex">
+            <div class="modal-header">
                 <h2>Somos una familia <span class="spanClose closeFamilia" data-modal="Familia">&times;</span></h2>
                 <p>Actualmente somos más de 70 integrantes en ésta gran familia, agradeceríamos mucho tu <a href="/apoyanos" title="Apoyanos">apoyo</a></p>
             </div>
@@ -111,7 +117,7 @@
 <div id="modalOportunidades" class="modal">
     <div class="flexModal" id="flexOportunidades" data-modal="Oportunidades">
         <div class="contenido-modal">
-            <div class="modal-header flex">
+            <div class="modal-header">
                 <h2>Tratamos de brindar una segunda oportunidad <span class="spanClose closeFamilia" data-modal="Oportunidades">&times;</span></h2>
                 <p>Hemos cobijado a peluditos con alguna discapacidad, agradeceríamos mucho tu <a href="/apoyanos">apoyo</a></p>
             </div>
@@ -144,17 +150,10 @@
                 <h3 class="text-center">Un detalle a los Médicos Veterinarios que siempre nos han apoyado en todo sentido</h3>
             </div>
         </div>
-        <div class="flex flex-4">
+        <div class="flex flex-4 flexVeterinarios">
             <div class="box person">
                 <div class="image round">
-                    <img src="images/mvz/01.jpg" alt="Sebastian Capuleño" />
-                </div>
-                <h3>Sebastían Capuleño</h3>
-                <p>MVZ</p>
-            </div>
-            <div class="box person">
-                <div class="image round">
-                    <img src="images/mvz/02.jpg" alt="Angel Ortega" />
+                    <img src="images/mvz/01.jpg" alt="Angel Ortega" />
                 </div>
                 <h3>Ángel Ortega</h3>
                 <p>MVZ</p>

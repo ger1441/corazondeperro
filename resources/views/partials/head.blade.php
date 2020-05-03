@@ -3,7 +3,7 @@
     <meta name="description" content="@if(isset($metaDescription)){{$metaDescription}}@else Somos la materialización de la conciencia que se tiene del abandono, de la injusticia y del sufrimiento. Somos el espacio físico real de la esperanza. @endif">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="robots" content="noindex,nofollow" />
+    <meta name="robots" content="index,follow" />
     <meta http-equiv="Content-Language" content="es-mx" />
     <!-- Open Graph -->
     <meta property="og:title" content="@if(isset($openGraph['title'])){{$openGraph['title']}}@else Calpulalpan Corazon de Perro @endif">

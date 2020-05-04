@@ -176,24 +176,51 @@
             <table class="alt">
                 <tbody>
                 <tr>
-                    <td>Valkiria</td>
-                    <td>CrossFit Calpulalpan, Tlaxcala</td>
+                    <td>Azucena Valdez Magaña</td>
+                    <td>Profesora</td>
                 </tr>
                 <tr>
-                    <td>Marza</td>
-                    <td>Coffe & Bar</td>
+                    <td>Templario DF CMLL</td>
+                    <td>Luchador Profesional</td>
                 </tr>
                 <tr>
-                    <td>Templario</td>
-                    <td>Luchador Profesional del CMLL</td>
+                    <td>Diablitos del Mictlan</td>
+                    <td>Organización Comunitaria</td>
                 </tr>
                 <tr>
-                    <td>JC Soto</td>
-                    <td>Cantante Versátil</td>
+                    <td>Mel Márquez</td>
+                    <td>Fundador de "Talento Calpulalpan"</td>
                 </tr>
                 <tr>
-                    <td>Lobos Calpulalpan</td>
-                    <td>Fútbol Club</td>
+                    <td>Hits 96.3 FM</td>
+                    <td>Radiodifusora</td>
+                </tr>
+
+                <tr>
+                    <td>Joannah Muñoz</td>
+                    <td>Diseñadora Gráfica</td>
+                </tr>
+                <tr>
+                    <td>Adriana Ahuatzi</td>
+                    <td>Doctora</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Maquerri Balderas</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Nallely</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Demy y Jorge Contreras</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Héctor Almazán</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Alberto Casterlan</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Fundación Tete</td>
                 </tr>
                 </tbody>
             </table>

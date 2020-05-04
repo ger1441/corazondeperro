@@ -21,9 +21,22 @@ Route::get('/', function () {
                     'type'=>'website',
                     'image'=>'https://www.calpuscorazondeperro.com/images/logo_open_graph.png',
                     'url'=>'https://www.calpuscorazondeperro.com',
-                    'description'=>'Ayudamos a animalitos con alguna discapacidad, atropellados, o enfermos (NO SOMOS FUNDACIÓN NI ASOCIACIÓN).',
+                    'description'=>'Ayudamos principalmente a animalitos con alguna discapacidad, atropellados, o enfermos (NO SOMOS FUNDACIÓN NI ASOCIACIÓN).',
                 ]
             ]);
+});
+
+Route::get('/historia', function () {
+    return view('historia',['bodyClass'=>'subpage','navClass'=>'','title'=>'Nuestra Historia | Calpulalpan Corazon de Perro',
+        'metaDescription'=>'Somos la materialización de la conciencia que se tiene del abandono, de la injusticia y del sufrimiento. Somos el espacio físico real de la esperanza.',
+        'openGraph'=>[
+            'title'=>'Conoce la maravillosa historia de nuestra labor',
+            'type'=>'website',
+            'image'=>'https://www.calpuscorazondeperro.com/images/logo_open_graph.png',
+            'url'=>'https://www.calpuscorazondeperro.com',
+            'description'=>'Ayudamos principalmente a animalitos con alguna discapacidad, atropellados, o enfermos. Conoce nuestra historia.',
+        ]
+    ]);
 });
 
 Route::get('/adopta', function(){

@@ -30,22 +30,10 @@
 <section class="wrapper sectionPrincipal">
     <div class="inner justifyContent">
         <h2>Nuestra Historia</h2>
-        <p><span class="image left"><img src="images/rufita.png" alt="Rufita" class="borderBlue" /></span><h4><strong>Todo comenzó con Rufita.</strong></h4>
-        <p><strong>Hace algunos años, en <span class="font-blue">2008</span>, rescaté a una perrita que se encontraba en posesión de unos vecinos los cuáles desafortunadamente se drogaban.  Me dolió ver el estado en el que estaba y que aparte no tenía como atajarse del sol o la lluvia. Insistí e insistí, hasta que un día me dijeron <span class="font-blue"><i>“Ten, llévatela”</i></span><br> Era pastor inglés.</strong></p>
-        <p><strong>Un día mi hermano y ella salieron a caminar juntos, para mala fortuna de ambos, una persona en estado de ebriedad los atropelló y Rufita resultó herida de gravedad.</strong></p>
-
-        <p><strong>
-                Cuándo estaba agonizando, le prometí que esto no quedaría así y que el culpable iba a pagar;<br>
-                pero mi mamá me explicó que debía dejar correr la vida, sin odio ni resentimiento y que si quería mantener un buen recuerdo de Rufa, lo mejor era <span class="font-blue">hacer algo positivo</span> para honrar su memoria.
-            </strong></p>
-
-        <p><strong>A la semana de su deceso, un <span class="font-blue">3 de Mayo</span>, encontré a un perrito atropellado, no pude evitar pensar en Rufa... y así es como nace la iniciativa de ayudar a peluditos que han sido agredidos, maltratados, violentados, atropellados… algunos discapacitados y otros enfermos.
-                Han sido <span class="font-blue">años de lucha constante</span>, pero siempre con la mentalidad y voluntad para apoyar a esos animalitos que han sufrido bastante.</strong></p>
-
-        <p><span class="image right"><img src="images/rufita_diana.jpeg" alt="Lupita & Rufita" class="borderBlue" /></span><strong>No solo hemos ayudado a perritos, también hemos ayudado a gatos, caballos, aves y uno que otro animalito de diferente especie.<br>
-                Con lo que logró juntar de algunos trabajos de estética canina y con la ayuda de mi esposo, hijo e hija, hemos logrado salir adelante, al igual que con el apoyo de algunas personas que se acuerdan de nosotros y nuestros rescataditos.</strong></p>
-
-        <p><strong>Y aunque hay temporadas que no cuento con mucha ayuda, espero en Dios <span class="font-blue">seguir con la fortaleza</span> para continuar con ésta gran labor y seguir ayudando animalitos a tener una mejor vida, una vida digna &#128522;</strong></p>
+        <p><span class="image left"><img src="images/rufita.png" alt="Rufita" class="borderBlue" /></span><h4><strong>En memoria de Rufa.</strong></h4>
+        <p><strong><span class="font-blue">Desde el año 2008</span> hemos ayudado a animalitos desprotegidos, que han sido atropellados, maltratados, quemados, abandonados, violentados, que han tenido alguna complicación por alguna enfermedad y debido ha esto han perdido alguna de sus extremidades o han quedado ciegos.</strong></p>
+        <p><strong>Hasta la fecha hemos brindado ayuda a <span class="font-blue">más de 300 animalitos</span>, hemos otorgado una segunda oportunidad, una esperanza de vida. Muchos de los rescates han sido demasiado complicados y desgarradores, algunos con finales muy tristes. Sin embargo, con paciencia, amor y dedicación, la mayoría ha podido salir adelante.</strong></p>
+        <p><strong>Lo tenemos que recalcar, no somos Asociación ni Fundación; intentamos cubrir los gastos con nuestros propios recursos, con las diferentes <a href="/apoyanos" title="Conoce nuestras actividades">actividades</a> que realizamos y con el apoyo de las personas. <br>Conoce más de ésta <a href="/historia">maravillosa historia</a> </strong></p>
     </div>
 </section>
 

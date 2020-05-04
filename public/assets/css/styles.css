@@ -45,6 +45,11 @@ body h2
     opacity: 1.0;
 }
 
+.margin-y{
+    margin-top: 20px !important;
+    margin-bottom: 10px !important;
+}
+
 
 
 /* For principal header */

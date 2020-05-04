@@ -13,16 +13,16 @@
 
             <div class="12u">
                 <p class="text-center">
-                    <a href="#" class="button" title="Galeria Adopción"><i class="fa fa-camera"></i> Galería</a>
+                    <a href="/adopciones" class="button" title="Adoptados"><i class="fa fa-camera"></i> Historias de Adopción</a>
                 </p>
             </div>
 
-            <p><strong>Quizá creas que NO puedes cambiar el mundo... pero ten por seguro que SÍ puedes mejorarlo <br> <span class="font-blue">¡Adopta!</span></strong></p>
+            <p><strong>Quizá crees que NO puedes cambiar el mundo, pero ten por seguro que SÍ puedes mejorarlo... <span class="font-blue">¡Adopta!</span></strong></p>
 
 
 
             <div>
-                <h3>¡Busca a tu próximo compañero de vida!</h3>
+                <h3 style="font-weight: bold;">¡Busca a tu próximo compañero de vida!</h3>
                 <form action="/adopta/busqueda" id="frmBusqueda" method="post">
                     <div class="row uniform">
                         <div class="4u 12u$(xsmall)">

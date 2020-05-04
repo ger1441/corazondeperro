@@ -40,6 +40,19 @@ Route::get('/adopta', function(){
 });
 Route::get('/adopta/{id}/conoceme','AnimalitoController@conoceme')->name('conoceme');
 
+Route::get('/adopciones', function(){
+    return view('adoptados',['bodyClass'=>'subpage','navClass'=>'','title'=>'Adopciones | Calpulalpan Corazon de Perro',
+        'metaDescription'=>'Actualmente hay millones de animalitos en las calles, muchos de ellos violentados y maltratados. Ayuda a cambiar esta realidad, NO compres, ADOPTA',
+        'openGraph'=>[
+            'title'=>'Brinda una segunda oportunidad',
+            'type'=>'website',
+            'image'=>'https://www.calpuscorazondeperro.com/images/logo_open_graph.png',
+            'url'=>'https://www.calpuscorazondeperro.com/adopta',
+            'description'=>'Actualmente hay millones de animalitos en las calles, violentados y maltratados. Ayuda a cambiar esta realidad. Brinda una segunda oportunidad',
+        ]
+    ]);
+});
+
 Route::get('/apoyanos',function(){
     return view('apoyanos',['bodyClass'=>'subpage','navClass'=>'','title'=>'Apoyanos | Calpulalpan Corazon de Perro',
                 'metaDescription'=>'Seguimos haciendo un esfuerzo para continuar con nuestra labor. Conoce nuestros servicios con los que contamos para generar recursos y seguir ayudando.',

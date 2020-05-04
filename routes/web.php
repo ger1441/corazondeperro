@@ -58,6 +58,7 @@ Route::post('/mensaje','MensajeController@envio')->name('envioEmail');
 /* Administrador */
 Auth::routes();
 Route::get('/admin','AdminController@home')->name('home');
+Route::resource('/usuarios','UserController');
 Route::resource('/rescataditos','AnimalitoController');
 Route::get('/mensajes','MensajeController@index')->name('mensajes')->middleware('auth');
 

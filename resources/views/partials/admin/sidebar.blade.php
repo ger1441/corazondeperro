@@ -26,7 +26,7 @@
                      with font-awesome or any other icon font library -->
                 @if(Auth::user()->role == 'Webmaster')
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="/usuarios" class="nav-link">
                         <i class="fas fa-users nav-icon"></i>
                         <p>Usuarios</p>
                     </a>

@@ -161,7 +161,7 @@
             </div>
         </div>
         <div class="table-wrapper">
-            <table class="alt">
+            <table class="alt font-weight-bold">
                 <tbody>
                 <tr>
                     <td>Azucena Valdez Magaña</td>

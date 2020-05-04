@@ -20,8 +20,8 @@
         <div class="box boxImportant">
             <h3>IMPORTANTE!!!</h3>
             <p><strong>Nuestra labor está <span class="font-blue">enfocada a perritos especiales:</span> amputados, ciegos, enfermos, atropellados, que han sido abandonados a su suerte.<br>
-                       Nosotros NO podemos albergar a las mascotas que simplemente la gente ya NO quiere o puede tener, evítanos la pena de negarle un espacio, si gustas podemos apoyarte a buscarle un nuevo hogar.<br>
-                       <span class="font-blue">Por favor se consciente</span> de TODO lo que implica un animalito, actualmente tenemos más de 70 perritos y varios gatitos.</strong></p>
+                       Nosotros NO podemos albergar a las mascotas que simplemente la gente ya no quiere o no puede tener, evítanos la pena de negarle un espacio, si gustas podemos apoyarte a buscarle un nuevo hogar.<br>
+                       <span class="font-blue">Por favor se consciente</span> de TODO lo que implica un animalito, actualmente tenemos casi 70 perritos y varios gatitos.</strong></p>
         </div>
     </div>
 </section>

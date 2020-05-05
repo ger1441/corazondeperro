@@ -71,10 +71,38 @@
             </div>
         </div>
     </section>
+
+    <div id="modalGallery" class="modal modalAdopcion">
+        <div class="flexModal" id="flexGallery" data-modal="Gallery">
+            <div class="contenido-modal">
+                <div class="modal-header">
+                    <span class="spanClose closeGallery" data-modal="Gallery">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <p class="text-center"><img src="" class="imageAdopcion" alt="Image Photo" id="imageGallery" /></p>
+                </div>
+                <div class="footer">
+                    <button class="buton special closeGallery" data-modal="Gallery">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
 @endsection
 
 @push('scripts')
     <script src="/assets/js/contact.js"></script>
+    <script>
+        $(function(){
+            $(document).on('click','.galeria_img',function(e){
+                var img = e.target.src;
+                $("#imageGallery").prop('src',img);
+                $("#modalGallery").show();
+            });
+            $(document).on('click','.closeGallery',function(){
+                $("#modalGallery").hide();
+            });
+        });
+    </script>
 @endpush
 
 

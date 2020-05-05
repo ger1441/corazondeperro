@@ -14,7 +14,7 @@
 
     <link rel="icon" href="favicon.png">
     <link rel="stylesheet" href="/assets/css/main.css" />
-    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/styles.css?v=1.0.1">
     <!-- Add Styles -->
     @stack('styles')
 </head>

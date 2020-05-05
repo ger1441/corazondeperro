@@ -25,14 +25,19 @@ Route::get('rescataditos',function(){
         ->toJson();
 });
 
+Route::get('adoptados',function(){
+    return datatables()
+        ->eloquent(App\Adoptado::query())
+        ->toJson();
+});
+
 Route::get('mensajes',function(){
-    /*return datatables()
-        ->eloquent(App\ Mensaje::query())
-        ->toJson();*/
-    $mensajes = \App\Mensaje::all();
-    return datatables()::of($mensajes)->editColumn('created_at',function ($mensaje){
-        return date('d-m-Y H:i:s',strtotime($mensaje->created_at));
-    })->make(true);
+    $mensajes = App\Mensaje::where('leido','=','0')->orderBy('created_at','desc')->get();
+    return datatables()::of($mensajes)
+                         ->editColumn('created_at',function ($mensaje){
+                             return date('d-m-Y H:i:s',strtotime($mensaje->created_at));
+                         })
+                         ->toJson();
 });
 Route::delete('mensaje/{id}','MensajeController@delete')->name('deleteMessage');
 

@@ -39,6 +39,12 @@
                     </a>
                 </li>
                 <li class="nav-item">
+                    <a href="/adoptados" class="nav-link">
+                        <i class="fas fa-hand-holding-heart nav-icon"></i>
+                        <p>Adoptados</p>
+                    </a>
+                </li>
+                <li class="nav-item">
                     <a href="/mensajes" class="nav-link">
                         <i class="far fa-envelope nav-icon"></i>
                         <p>Mensajes</p>

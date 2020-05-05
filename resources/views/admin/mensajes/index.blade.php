@@ -9,6 +9,7 @@
         <table class="table table-bordered table-striped" id="tableMensajes">
             <thead>
             <tr class="table-primary">
+                <th rowspan="2">Mensaje</th>
                 <th rowspan="2">Asunto</th>
                 <th rowspan="2">De</th>
                 <th rowspan="2">Email</th>
@@ -90,9 +91,10 @@
         var listar = function(){
             var table = $("#tableMensajes").DataTable({
                 "serverSide": true,
-                "order" : [[ 3, "desc"]],
+                "order" : [[ 0, "desc"]],
                 "ajax": "{{ url('api/mensajes') }}",
                 "columns": [
+                    {"data": 'id'},
                     {"data": 'asunto'},
                     {"data": 'nombre'},
                     {"data": 'email'},

@@ -86,6 +86,7 @@ Auth::routes();
 Route::get('/admin','AdminController@home')->name('home');
 Route::resource('/usuarios','UserController');
 Route::resource('/rescataditos','AnimalitoController');
+Route::resource('/adoptados','AdoptadoController');
 Route::get('/mensajes','MensajeController@index')->name('mensajes')->middleware('auth');
 
 Route::get('/test',function() {

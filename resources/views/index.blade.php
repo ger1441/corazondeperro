@@ -84,7 +84,7 @@
 <!-- Modal Familia -->
 <div id="modalFamilia" class="modal">
     <div class="flexModal" id="flexFamilia" data-modal="Familia">
-        <div class="contenido-modal">
+        <div class="contenido-modal modal-principal">
             <div class="modal-header">
                 <h2>Somos una familia <span class="spanClose closeFamilia" data-modal="Familia">&times;</span></h2>
                 <p>Actualmente somos más de 70 integrantes en ésta gran familia, agradeceríamos mucho tu <a href="/apoyanos" title="Apoyanos">apoyo</a></p>
@@ -112,7 +112,7 @@
 <!-- Modal Oportunidades -->
 <div id="modalOportunidades" class="modal">
     <div class="flexModal" id="flexOportunidades" data-modal="Oportunidades">
-        <div class="contenido-modal">
+        <div class="contenido-modal modal-principal">
             <div class="modal-header">
                 <h2>Tratamos de brindar una segunda oportunidad <span class="spanClose closeFamilia" data-modal="Oportunidades">&times;</span></h2>
                 <p>Hemos cobijado a peluditos con alguna discapacidad, agradeceríamos mucho tu <a href="/apoyanos">apoyo</a></p>

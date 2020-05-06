@@ -74,7 +74,7 @@
 
     <div id="modalGallery" class="modal modalAdopcion">
         <div class="flexModal" id="flexGallery" data-modal="Gallery">
-            <div class="contenido-modal">
+            <div class="contenido-modal modal-conoceme">
                 <div class="modal-header">
                     <span class="spanClose closeGallery" data-modal="Gallery">&times;</span>
                 </div>

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Adoptado;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 use App\Traits;
 
 class AdoptadoController extends Controller
@@ -69,7 +70,7 @@ class AdoptadoController extends Controller
         $adoptado->video = ($request->has('video')&&$request->video!="") ? $request->video : "";
         $adoptado->save();
 
-        return redirect('/rescataditos/create')->with('message','Registro exitoso');
+        return redirect('/adoptados/create')->with('message','Registro exitoso');
     }
 
     /**
@@ -80,7 +81,8 @@ class AdoptadoController extends Controller
      */
     public function show($id)
     {
-        //
+        $adoptado = Adoptado::findOrFail($id);
+        return view('admin.adoptados.show',['adoptado'=>$adoptado]);
     }
 
     /**
@@ -91,7 +93,8 @@ class AdoptadoController extends Controller
      */
     public function edit($id)
     {
-        //
+        $adoptado = Adoptado::findOrFail($id);
+        return view('admin.adoptados.edit',['adoptado'=>$adoptado]);
     }
 
     /**
@@ -103,7 +106,36 @@ class AdoptadoController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $validatedInfo = $request->validate([
+            'nombre' => 'required|string',
+            'historia' => 'required|string',
+        ]);
+
+        $adoptado = Adoptado::findOrFail($id);
+
+        # Guardamos las imagenes de "Antes" y "Después"
+        $nameImageBefore = $adoptado->foto_antes;
+        if($request->hasFile('foto_antes')){
+            $nameImageBefore = $this->upload($request->foto_antes,'public/images/adoptados','before');
+            # Borramos la imagen actual de "antes"
+            Storage::delete("public/images/adoptados/$adoptado->foto_antes");
+        }
+        $nameImageAfter = $adoptado->foto_despues;
+        if($request->hasFile('foto_despues')){
+            $nameImageAfter = $this->upload($request->foto_despues,'public/images/adoptados','after');
+            # Borramos la imagen actual de "despues"
+            Storage::delete("public/images/adoptados/$adoptado->foto_despues");
+        }
+
+
+        $adoptado->name = $request->nombre;
+        $adoptado->foto_antes = $nameImageBefore;
+        $adoptado->foto_despues = $nameImageAfter;
+        $adoptado->historia = $request->historia;
+        $adoptado->video = ($request->has('video')&&$request->video!="") ? $request->video : "";
+        $adoptado->save();
+
+        return redirect("/adoptados/$adoptado->id/edit")->with('message','Actualización exitosa');
     }
 
     /**
@@ -114,6 +146,8 @@ class AdoptadoController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $adoptado = Adoptado::findOrFail($id);
+        $adoptado->delete();
+        return response()->json(['res'=>'success','report'=>'']);
     }
 }

@@ -20,14 +20,14 @@
                     <label for="foto">Foto Antes</label>
                     <input type="file" name="foto_antes" id="foto_antes" class="form-control" accept="image/*" required>
                     <small id="fotoHelpBlock" class="form-text text-muted">
-                        Se recomienda una imagen de <strong>280x280</strong> pixeles
+                        Se recomienda una imagen de <strong>450x450</strong> pixeles
                     </small>
                 </div>
                 <div class="form-group col-sm-6 col-md-4">
                     <label for="foto">Foto Después</label>
                     <input type="file" name="foto_despues" id="foto_despues" class="form-control" accept="image/*" required>
                     <small id="fotoHelpBlock" class="form-text text-muted">
-                        Se recomienda una imagen de <strong>280x280</strong> pixeles
+                        Se recomienda una imagen de <strong>450x450</strong> pixeles
                     </small>
                 </div>
                 <div class="form-group col-12">

@@ -13,7 +13,7 @@ class AdoptadoController extends Controller
 
     public function __construct()
     {
-        $this->middleware('auth');
+        $this->middleware('auth',['except'=>['adopciones']]);
     }
 
     /**
@@ -149,5 +149,21 @@ class AdoptadoController extends Controller
         $adoptado = Adoptado::findOrFail($id);
         $adoptado->delete();
         return response()->json(['res'=>'success','report'=>'']);
+    }
+
+    public function adopciones()
+    {
+        $adoptados = Adoptado::all();
+        return view('adoptados',['bodyClass'=>'subpage','navClass'=>'','title'=>'Adopciones | Calpulalpan Corazon de Perro',
+            'metaDescription'=>'Actualmente hay millones de animalitos en las calles, muchos de ellos violentados y maltratados. Ayuda a cambiar esta realidad, NO compres, ADOPTA',
+            'openGraph'=>[
+                'title'=>'Brinda una segunda oportunidad',
+                'type'=>'website',
+                'image'=>'https://www.calpuscorazondeperro.com/images/logo_open_graph.png',
+                'url'=>'https://www.calpuscorazondeperro.com/adopta',
+                'description'=>'Actualmente hay millones de animalitos en las calles, violentados y maltratados. Ayuda a cambiar esta realidad. Brinda una segunda oportunidad',
+            ],
+            'adoptados'=>$adoptados
+        ]);
     }
 }

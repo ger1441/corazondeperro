@@ -53,7 +53,9 @@ Route::get('/adopta', function(){
 });
 Route::get('/adopta/{id}/conoceme','AnimalitoController@conoceme')->name('conoceme');
 
-Route::get('/adopciones', function(){
+Route::get('/adopciones','AdoptadoController@adopciones')->name('adopciones');
+
+/*Route::get('/adopciones', function(){
     return view('adoptados',['bodyClass'=>'subpage','navClass'=>'','title'=>'Adopciones | Calpulalpan Corazon de Perro',
         'metaDescription'=>'Actualmente hay millones de animalitos en las calles, muchos de ellos violentados y maltratados. Ayuda a cambiar esta realidad, NO compres, ADOPTA',
         'openGraph'=>[
@@ -64,7 +66,7 @@ Route::get('/adopciones', function(){
             'description'=>'Actualmente hay millones de animalitos en las calles, violentados y maltratados. Ayuda a cambiar esta realidad. Brinda una segunda oportunidad',
         ]
     ]);
-});
+});*/
 
 Route::get('/apoyanos',function(){
     return view('apoyanos',['bodyClass'=>'subpage','navClass'=>'','title'=>'Apoyanos | Calpulalpan Corazon de Perro',

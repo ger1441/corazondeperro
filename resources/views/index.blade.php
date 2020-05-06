@@ -1,5 +1,12 @@
 @extends('layouts.page')
 
+@push('styles')
+    <style>
+        div#contentHistoria{
+            line-height: 20px;
+        }
+    </style>
+@endpush
 @section('content')
 <!-- Banner -->
 <section id="banner" class="sectionBanner">
@@ -28,12 +35,13 @@
 
 <!-- Nuestra Historia -->
 <section class="wrapper sectionPrincipal">
-    <div class="inner justifyContent">
+    <div class="inner justifyContent" id="contentHistoria">
         <h2>Nuestra Historia</h2>
         <p><span class="image left"><img src="images/rufita.png" alt="Rufita" class="borderBlue" /></span><h4><strong>En memoria de Rufa.</strong></h4>
         <p><strong><span class="font-blue">Desde el año 2008</span> hemos ayudado a animalitos desprotegidos, que han sido atropellados, maltratados, quemados, abandonados, violentados, que han tenido alguna complicación por alguna enfermedad y debido ha esto han perdido alguna de sus extremidades o han quedado ciegos.</strong></p>
-        <p><strong>Hasta la fecha hemos brindado ayuda a <span class="font-blue">más de 300 animalitos</span>, hemos otorgado una segunda oportunidad, una esperanza de vida. Muchos de los rescates han sido demasiado complicados y desgarradores, algunos con finales muy tristes. Sin embargo, con paciencia, amor y dedicación, la mayoría ha podido salir adelante.</strong></p>
-        <p><strong>Lo tenemos que recalcar, no somos Asociación ni Fundación; intentamos cubrir los gastos con nuestros propios recursos, con las diferentes <a href="/apoyanos" title="Conoce nuestras actividades">actividades</a> que realizamos y con el apoyo de las personas. <br>Conoce más de ésta <a href="/historia">maravillosa historia</a> </strong></p>
+        <p><strong>Hasta la fecha hemos brindado ayuda a <span class="font-blue">más de 300 animalitos</span>, les hemos otorgado una segunda oportunidad, una esperanza de vida. Muchos de los rescates han sido demasiado complicados y desgarradores, algunos con finales muy tristes. Sin embargo, con paciencia, amor y dedicación, la mayoría ha podido salir adelante.</strong></p>
+        <p><strong>Lo tenemos que recalcar, no somos Asociación ni Fundación; intentamos cubrir los gastos con nuestros propios recursos, con las diferentes <a href="/apoyanos" title="Conoce nuestras actividades">actividades</a> que realizamos y con el apoyo de las personas. </strong></p>
+        <p><strong>Conoce más de ésta <a href="/historia">maravillosa historia</a></strong></p>
     </div>
 </section>
 

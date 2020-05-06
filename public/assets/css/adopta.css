@@ -76,12 +76,19 @@ div.detalles h3
     flex-wrap: wrap;
 }
 
+.modal-conoceme .modal-body p{
+    margin: 0;
+}
+.modal-conoceme .modal-body img{
+    margin-top: 15px;
+}
+
 .galeria_img
 {
     width: 250px;
     height: 200px;
     margin-bottom: 15px;
-    object-fit: cover;
+    /*object-fit: cover;*/
     border: 5px solid #5385c1;
 }
 

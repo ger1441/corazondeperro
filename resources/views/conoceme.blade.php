@@ -1,7 +1,7 @@
 @extends('layouts.page')
 
 @push('styles')
-    <link rel="stylesheet" href="/assets/css/adopta.css">
+    <link rel="stylesheet" href="/assets/css/adopta.css?v=1.0.1">
 @endpush
 
 @section('content')
@@ -75,9 +75,9 @@
     <div id="modalGallery" class="modal modalAdopcion">
         <div class="flexModal" id="flexGallery" data-modal="Gallery">
             <div class="contenido-modal modal-conoceme">
-                <div class="modal-header">
+                {{--<div class="modal-header">
                     <span class="spanClose closeGallery" data-modal="Gallery">&times;</span>
-                </div>
+                </div>--}}
                 <div class="modal-body">
                     <p class="text-center"><img src="" class="imageAdopcion" alt="Image Photo" id="imageGallery" /></p>
                 </div>

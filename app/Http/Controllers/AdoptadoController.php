@@ -161,7 +161,7 @@ class AdoptadoController extends Controller
                 'type'=>'website',
                 'image'=>'https://www.calpuscorazondeperro.com/images/logo_open_graph.png',
                 'url'=>'https://www.calpuscorazondeperro.com/adopta',
-                'description'=>'Actualmente hay millones de animalitos en las calles, violentados y maltratados. Ayuda a cambiar esta realidad. Brinda una segunda oportunidad',
+                'description'=>'Sólo hace falta un nuevo comienzo. No compres, adopta.',
             ],
             'adoptados'=>$adoptados
         ]);

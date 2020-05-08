@@ -153,7 +153,9 @@ class AdoptadoController extends Controller
 
     public function adopciones()
     {
-        $adoptados = Adoptado::all();
+        $getAdoptados = Adoptado::all();
+        $shuffled = $getAdoptados->shuffle();
+        $adoptados = $shuffled->all();
         return view('adoptados',['bodyClass'=>'subpage','navClass'=>'','title'=>'Adopciones | Calpulalpan Corazon de Perro',
             'metaDescription'=>'Actualmente hay millones de animalitos en las calles, muchos de ellos violentados y maltratados. Ayuda a cambiar esta realidad, NO compres, ADOPTA',
             'openGraph'=>[

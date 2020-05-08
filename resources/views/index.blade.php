@@ -96,10 +96,6 @@
                         <div class="4u"><span class="image fit imageFit" data-target="imagePFamilia" data-image="images/familia/01.png"><img src="images/familia/01.png" alt="Familia 02" /></span></div>
                         <div class="4u"><span class="image fit imageFit" data-target="imagePFamilia" data-image="images/familia/02.png"><img src="images/familia/02.png" alt="Familia 03" /></span></div>
                         <div class="4u$"><span class="image fit imageFit" data-target="imagePFamilia" data-image="images/familia/03.png"><img src="images/familia/03.png" alt="Familia 04" /></span></div>
-                        {{--<!-- Break -->
-                        <div class="4u"><span class="image fit"><img src="images/familia/01.png" alt="" /></span></div>
-                        <div class="4u"><span class="image fit"><img src="images/familia/02.png" alt="" /></span></div>
-                        <div class="4u$"><span class="image fit"><img src="images/familia/03.png" alt="" /></span></div>--}}
                     </div>
                 </div>
             </div>
@@ -213,7 +209,7 @@
                     <td colspan="2">Héctor Almazán</td>
                 </tr>
                 <tr>
-                    <td colspan="2">Alberto Casterlan</td>
+                    <td colspan="2">Alberto Castelan</td>
                 </tr>
                 <tr>
                     <td colspan="2">Fundación Tete</td>

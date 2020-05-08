@@ -12,10 +12,6 @@ body h2
     color: #5385c1 !important;
 }
 
-.enlace-decorate-none{
-    text-decoration: none !important;
-}
-
 .text-center{
     text-align: center;
 }
@@ -143,9 +139,6 @@ img.borderBlue
     }
     .modal-header p{
         margin-bottom: 1em !important;
-    }
-    .modal-header a{
-        text-decoration: none !important;
     }
     .modal-header .spanClose{
         color: #5385c1;

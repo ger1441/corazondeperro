@@ -13,6 +13,7 @@
         <!-- Break -->
         <div class="12u$">
             <input type="hidden" name="requerido" id="requerido" value="">
+            <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
             <textarea name="message" id="message" placeholder="Déjanos tu mensaje o comentario, gracias por apoyar!" rows="6" style="resize: none;" required></textarea>
         </div>
         <!-- Break -->
@@ -21,7 +22,6 @@
                 <li><input type="submit" value="Enviar" /></li>
             </ul>
         </div>
-
         <div class="12u$ text-center" id="resMessage"></div>
     </div>
 </form>

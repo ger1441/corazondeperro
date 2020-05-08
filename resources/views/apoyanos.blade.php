@@ -48,6 +48,14 @@
 @endsection
 
 @push('scripts')
-    <script src="/assets/js/contact.js"></script>
-
+    <script src='https://www.google.com/recaptcha/api.js?render={{env('RECAPTCHA_V3_SITEKEY')}}'></script>
+    <script src="/assets/js/contact.js?v=beta1.0.1"></script>
+    <script>
+        grecaptcha.ready(function() {
+            grecaptcha.execute('{{env('RECAPTCHA_V3_SITEKEY')}}', {action: 'homepage'})
+                .then(function(token) {
+                    document.getElementById('g-recaptcha-response').value=token;
+                });
+        });
+    </script>
 @endpush

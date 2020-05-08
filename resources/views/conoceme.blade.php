@@ -90,6 +90,7 @@
 @endsection
 
 @push('scripts')
+    <script src='https://www.google.com/recaptcha/api.js?render={{env('RECAPTCHA_V3_SITEKEY')}}'></script>
     <script src="/assets/js/contact.js"></script>
     <script>
         $(function(){
@@ -101,6 +102,12 @@
             $(document).on('click','.closeGallery',function(){
                 $("#modalGallery").hide();
             });
+        });
+        grecaptcha.ready(function() {
+            grecaptcha.execute('{{env('RECAPTCHA_V3_SITEKEY')}}', {action: 'homepage'})
+                .then(function(token) {
+                    document.getElementById('g-recaptcha-response').value=token;
+                });
         });
     </script>
 @endpush

@@ -60,6 +60,7 @@ Route::post('/adopta/busqueda',function(Request $request){
     $talla   = $request->talla;
 
     $arraySearch['especie'] = $especie;
+    $arraySearch['mostrar'] = 1;
     if($genero!='Todos') $arraySearch['sexo'] = $genero;
     if($talla!='Todos') $arraySearch['talla'] = $talla;
 

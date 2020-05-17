@@ -232,7 +232,7 @@ class AnimalitoController extends Controller
     /* Conoceme ( Seccion de Adopta) */
     public function conoceme($idAnimalito)
     {
-        $animalito = Animalito::where('id',"=",$idAnimalito)->with('animalitoHistoria','animalitoGaleria')->firstOrFail();
+        $animalito = Animalito::where([['id',"=",$idAnimalito],['mostrar','=','1']])->with('animalitoHistoria','animalitoGaleria')->firstOrFail();
         return view('conoceme',['rescatadito'=>$animalito,'bodyClass'=>'subpage','navClass'=>'', 'title'=>'Adopta | Calpulalpan Corazon de Perro',
                     'openGraph'=>[
                         'title'=>'Adopta a '.$animalito->nombre,

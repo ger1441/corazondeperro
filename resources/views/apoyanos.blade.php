@@ -25,9 +25,12 @@
             <div class="justifyContent">
                 <h2>Otras maneras de apoyar</h2>
                 <p><strong>Como podrás notar, realizamos diferentes actividades para poder ayudar a los animalitos que lo necesiten, pero sin duda alguna <span class="font-blue">tu ayuda es muy importante</span> para nosotros.<br>
-                        Hay temporadas en las que el trabajo escasea y difícilmente la gente nos puede apoyar solicitando servicios, sin embargo cualquier esfuerzo por ayudarnos, sea en efectivo o en especie (alimento, material de curación, material de limpieza)  sin importar la cantidad, siempre será bien recibido. Si deseas hacer una <span class="font-blue">aportación voluntaria</span> puedes hacer click en el siguiente botón.<br>
+                        Hay temporadas en las que el trabajo escasea y difícilmente la gente nos puede apoyar solicitando servicios, sin embargo cualquier esfuerzo por ayudarnos, sea en efectivo o en especie (alimento, material de curación, material de limpieza)  sin importar la cantidad, siempre será bien recibido.<br>
                     ¡Muchas Gracias!</strong></p>
 
+                <p class="text-center"><img src="images/donacion.jpg" alt="Tarjeta Bancomer 4152313365459432" class="image fit"></p>
+
+                <h3><strong>Puedes hacernos una aportación al número de tarjeta ó mediante una donación en PayPal</strong></h3>
                 <p class="text-center">
                     <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8NMHL64T8AWK8&source=url" target="_blank">
                         <img src="/images/paypal_donar.gif" alt="PayPal - La forma segura y fácil de donar" title="PayPal - La forma segura y fácil de donar">
